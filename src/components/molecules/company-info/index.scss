@@ -1,0 +1,137 @@
+.m-company-info {
+  &__list {
+    padding: 0 32px;
+    background-color: get-color('white');
+    border: 1px solid get-color('border', 'primary');
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0 0 0 / 5%);
+
+    @include pc {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 60px;
+      padding: 32px 90px;
+    }
+
+    @include tablet {
+      column-gap: convert-vw(60);
+      padding: convert-vw(32) convert-vw(90);
+    }
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+
+    @include pc {
+      flex: 1 1 calc(33% - 60px);
+
+      &:nth-child(3n) {
+        &:after {
+          width: 100%;
+        }
+      }
+
+      &:nth-child(n + 4) {
+        @include pc {
+          padding-top: 32px;
+          margin-top: 32px;
+        }
+
+        &:after {
+          position: absolute;
+          top: 0;
+          left: 0;
+          content: '';
+          border-top: 2px solid get-color('border', 'primary');
+        }
+      }
+
+      &:nth-child(n + 4):not(:nth-child(3n)) {
+        &:after {
+          width: calc(100% + 60px);
+        }
+      }
+    }
+
+    @include tablet {
+      flex: 1 1 calc(33% - convert-vw(60));
+    }
+
+    @include sp {
+      padding: 32px 0;
+      border-bottom: 2px solid get-color('border', 'primary');
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+
+  &__term {
+    @include u-fz(19, 23);
+
+    margin-bottom: 12px;
+    font-weight: $font-weight-bold;
+    color: get-color('green');
+    text-transform: uppercase;
+    @include font-other(vi) {
+      font-family: $font-family-saira;
+    }
+    @include pc {
+      @include u-fz(20, 24, false, true);
+    }
+
+    @include tablet {
+      margin-bottom: convert-vw(12);
+    }
+  }
+
+  &__value {
+    @include u-fz(17, 23);
+
+    @include pc {
+      @include u-fz(18, 24, false, true);
+    }
+
+    .a-text {
+      @include u-fz(17, 23);
+
+      @include pc {
+        @include u-fz(18, 24, false, true);
+      }
+    }
+
+    a {
+      &:hover {
+        @include only-pc {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  &__icon {
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    margin-top: -3px;
+    margin-right: 16px;
+    color: get-color('green');
+
+    @include pc {
+      width: 32px;
+      height: 32px;
+      margin-top: -4px;
+      margin-right: 26px;
+    }
+
+    @include tablet {
+      width: convert-vw(32);
+      height: convert-vw(32);
+      margin-top: convert-vw(-4);
+      margin-right: convert-vw(26);
+    }
+  }
+}

@@ -1,0 +1,126 @@
+.o-blog-hero {
+  $height-content-pc: 412px;
+
+  position: relative;
+  display: flex;
+  overflow: hidden;
+
+  &__bg {
+    @include pc {
+      flex: 0 0 102px;
+      height: 900px;
+      margin-top: -80px;
+    }
+
+    @include tablet {
+      flex: 0 0 convert-vw(102);
+      height: convert-vw(900);
+      margin-top: convert-vw(-80);
+    }
+
+    @include sp {
+      flex: 0 0 59px;
+      height: 804px;
+      margin-top: -80px;
+    }
+
+    @include sp-small {
+      flex: 0 0 40px;
+    }
+
+    .a-image {
+      height: 100%;
+    }
+  }
+
+  &__content {
+    background-color: get-color('base', 'white');
+
+    @include pc {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: $height-content-pc;
+      padding-left: 48px;
+    }
+    @include tablet {
+      height: convert-vw($height-content-pc);
+      padding-left: convert-vw(48);
+    }
+    @include sp {
+      flex: auto;
+      height: 585px;
+      padding: 0 20px;
+    }
+  }
+
+  &__main-title {
+    margin: 21px 0 23px;
+    @include pc {
+      margin: 80px 0 60px;
+    }
+    @include tablet {
+      margin: convert-vw(80) 0 convert-vw(60);
+    }
+
+    svg {
+      width: 131px;
+      @include pc {
+        width: 311px;
+      }
+      @include tablet {
+        width: convert-vw(311);
+      }
+
+      path {
+        @for $i from 1 through 10 {
+          &:nth-child(#{$i}n) {
+            animation: dash 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+            animation-delay: #{0.8 + $i * 0.2}s;
+          }
+        }
+      }
+    }
+
+    mask {
+      mask-type: alpha;
+    }
+  }
+
+  &__title {
+    @include font-other(vi) {
+      font-family: $font-family-saira;
+    }
+    @include sp {
+      margin-left: 5px;
+    }
+  }
+
+  &__image {
+    background-color: get-color('base', 'white');
+    @include pc {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: get-zindex('neutral');
+      width: calc(100% - 460px);
+      height: $height-content-pc;
+      padding: 21px 60px;
+    }
+
+    @include tablet {
+      width: calc(100% - convert-vw(460));
+      height: convert-vw($height-content-pc);
+      padding: convert-vw(21) convert-vw(60);
+    }
+
+    @include sp {
+      height: 275px;
+      margin: 0 -16px 57px;
+    }
+
+    .a-image {
+      height: 100%;
+    }
+  }
+}

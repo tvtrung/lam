@@ -1,0 +1,32 @@
+{
+  "title":"BLOG",
+  "search-result":"SEARCH RESULT",
+  "view-more": "Xem thêm ",
+  "blog": " bài",
+  "search-placeholder":"Tìm kiếm",
+  "indicator": {
+    "most-viewed-posts": "Bài viết xem nhiều",
+    "old-posts": "Bài viết cũ",
+    "recent-posts": "Bài viết gần đây",
+    "favorite-posts": "Bài viết yêu thích"
+  },
+  "category": {
+    "01": "Tất cả",
+    "02": "Tin tức",
+    "03": "Sự kiện",
+    "04": "Công nghệ",
+    "05": "Văn hoá",
+    "06": "Chuyện nghề",
+    "07": "Khác"
+  },
+  "blog-list": {
+    "blog01": "Kỷ niệm 9 năm thành lập công ty (26/11/2012 - 26/11/2021)",
+    "blog02": "Cùng Lampart nhìn lại năm 2021",
+    "blog03": "Happy International Men’s day (19/11)",
+    "blog04": "Serminar công nghệ và sự đổi mới trong năm 2022"
+  },
+  "search": {
+    "01": "Kết quả tìm kiếm cho ",
+    "02": "Tất niên công ty"
+  }
+}

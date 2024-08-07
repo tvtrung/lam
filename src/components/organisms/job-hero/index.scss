@@ -1,0 +1,126 @@
+.o-job-hero {
+  position: relative;
+  display: flex;
+  background-color: get-color('base', 'white');
+
+  @include sp {
+    padding-bottom: 113px;
+  }
+
+  &__bg {
+    @include pc {
+      flex: 0 0 102px;
+      height: 820px;
+    }
+
+    @include tablet {
+      flex: 0 0 convert-vw(102);
+      height: convert-vw(820);
+    }
+
+    @include sp {
+      flex: 0 0 59px;
+      height: 724px;
+    }
+
+    @include sp-small {
+      flex: 0 0 39px;
+    }
+
+    .a-image {
+      height: 100%;
+    }
+  }
+
+  &__content {
+    @include pc {
+      margin-left: 50px;
+    }
+    @include tablet {
+      margin-left: convert-vw(50);
+    }
+    @include sp {
+      flex: auto;
+      padding: 0 16px;
+    }
+  }
+
+  &__big-title,
+  &__title {
+    @include pc {
+      position: relative;
+      z-index: get-zindex('foreground');
+    }
+  }
+
+  &__title {
+    @include font-other(vi) {
+      font-family: $font-family-saira;
+    }
+    @include sp {
+      margin-left: 10px;
+    }
+  }
+
+  &__big-title {
+    margin-top: 22px;
+    margin-bottom: 20px;
+
+    @include pc {
+      margin-top: 89px;
+      margin-bottom: 58px;
+    }
+    @include tablet {
+      margin-top: convert-vw(89);
+      margin-bottom: convert-vw(58);
+    }
+
+    svg {
+      width: 109px;
+      @include pc {
+        width: 264px;
+      }
+      @include tablet {
+        width: convert-vw(264);
+      }
+
+      path {
+        @for $i from 1 through 10 {
+          &:nth-child(#{$i}n) {
+            animation: dash 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+            animation-delay: #{0.8 + $i * 0.2}s;
+          }
+        }
+      }
+    }
+
+    mask {
+      mask-type: alpha;
+    }
+  }
+
+  &__image {
+    @include pc {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: get-zindex('neutral');
+      width: calc(100% - 519px);
+      height: 461px;
+    }
+
+    @include tablet {
+      width: calc(100% - convert-vw(519));
+      height: convert-vw(461);
+    }
+
+    @include sp {
+      height: 312px;
+      margin: 0 -16px 23px;
+    }
+
+    .a-image {
+      height: 100%;
+    }
+  }
+}

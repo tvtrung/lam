@@ -1,0 +1,74 @@
+.o-job-list {
+  &__grid-jobs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 32px;
+
+    @include tablet {
+      row-gap: convert-vw(20);
+      column-gap: convert-vw(32);
+    }
+
+    @include sp {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 16px;
+      column-gap: 11px;
+    }
+  }
+
+  &__grid-item {
+    display: inline-grid;
+    align-items: center;
+    justify-items: center;
+  }
+
+  &__grid-item__vi {
+    display: inline-grid;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  &__show-less {
+    .a-button__icon {
+      transform: rotate(-90deg);
+    }
+
+    &:hover {
+      @include only-pc {
+        .a-button__icon {
+          transform: translateY(-2px) rotate(-90deg);
+        }
+      }
+    }
+  }
+
+  &__show-more {
+    &:hover {
+      @include only-pc {
+        .a-button__icon {
+          transform: translateY(2px) rotate(90deg);
+        }
+      }
+    }
+  }
+
+  &__wrap-button {
+    margin-top: 32px;
+    text-align: center;
+
+    @include tablet {
+      margin-top: convert-vw(32);
+    }
+  }
+
+  &__job-content {
+    margin-top: 46px;
+    @include sp {
+      margin: 31px -18px 0;
+    }
+    @include tablet {
+      margin-top: convert-vw(46);
+    }
+  }
+}

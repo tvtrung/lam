@@ -1,0 +1,70 @@
+.o-social-network-service {
+  position: fixed;
+  right: 10px;
+  bottom: 0;
+  z-index: get-zindex('stickybuttons');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include pc {
+    right: 55px;
+    justify-content: space-between;
+    height: calc(100% - 79px - 32px);
+  }
+  @include tablet {
+    right: convert-vw(55px);
+    height: calc(100% - 79px - convert-vw(32px));
+  }
+
+  @include tablet-small {
+    right: 30px;
+  }
+
+  @include sp {
+    margin-bottom: 40px;
+    opacity: 100%;
+    transition: opacity 0.3s ease;
+  }
+
+  &--disable {
+    @include sp {
+      opacity: 0%;
+    }
+  }
+
+  & > .a-like {
+    flex-shrink: 0;
+    margin-top: 12px;
+
+    @include pc {
+      margin-bottom: 124px;
+    }
+
+    @include tablet {
+      margin-bottom: convert-vw(124px);
+    }
+
+    @include sp {
+      margin-bottom: 102px;
+    }
+  }
+
+  .o-share__list {
+    @include sp {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .o-share__item {
+      @include sp {
+        margin-top: 12px;
+        margin-right: 0;
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}

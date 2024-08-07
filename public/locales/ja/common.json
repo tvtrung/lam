@@ -1,0 +1,80 @@
+{
+  "posts": "投稿",
+  "pre-post":"前の記事へ",
+  "next-post": "次の記事へ",
+  "view-detail": "詳細を見る",
+  "category": "カテゴリー",
+  "display-order": "表示順",
+  "see-more": "もっと見る",
+  "show-less": "閉じる",
+  "about": "ABOUT",
+  "service": "SERVICE",
+  "news": "BLOG",
+  "job": "JOB",
+  "recruit": "応募",
+  "address": "12F, An Phu Plaza, 117-119 Ly Chinh Thang, Vo Thi Sau Ward, Dist 3, Ho Chi Minh City, Viet Nam",
+  "form": {
+    "title": {
+      "01": "私たちと働きましょう",
+      "02": ""
+    },
+    "intro": "一人一人が成長できる環境のLAMPARTで、私たちと一緒に働いてみませんか？興味のある方はこちらのフォームからご応募ください。",
+    "input": {
+      "name": "お名前",
+      "phone": "電話番号",
+      "email": "メールアドレス",
+      "position": {
+        "label": "応募ポジション",
+        "placeholder": "ポジション選択",
+        "input-placeholder": "Consultant Manager",
+        "data": {
+          "other": "他のボジション"
+        }
+      },
+      "level": {
+        "label": "希望役職",
+        "placeholder": "役職選択"
+      },
+      "file": "CV/書類",
+      "other-file": "その他ファイル(任意)",
+      "file-size-note": "(*.doc, *.docx, *.pdf - 5MB未満)",
+      "input-file-placeholder": "ファイル選択",
+      "note-placeholder": "備考"
+    },
+    "annotation": {
+      "label": "個人情報保護方針",
+      "note": "ご記入いただいた個人情報は、書類の送付、メールの送信、電話でのご連絡の目的でのみ利用させていただきます。"
+    },
+    "term": "個人情報の取扱いに同意します。",
+    "submit-button": "送信",
+    "contact": {
+      "text01": "次の",
+      "link": "リンク",
+      "text02": "から応募できます。または" ,
+      "email": "「recruit@lampart-vn.com」",
+      "text03": "までメールを送信してください。"
+    },
+    "error-message": {
+      "name": "お名前を入力してください",
+      "phone": "電話番号を入力してください",
+      "email": "メールアドレスを入力してください",
+      "position": "応募ポジションを選んでください",
+      "level":"希望役職を選んでください",
+      "file": "履歴書/書類を選んで下さい",
+      "file-size": "MB未満ファイルを選んで下さい",
+      "file-type": "Please attach your CV/Resume *.doc, *.docx, *.pdf",
+      "term": "Please agree to the terms of use of personal information."
+    },
+    "thanks": {
+      "title": "THANK YOU!",
+      "content": {
+        "01": "Your application has been submitted successfully.",
+        "02": "Thank you for submitting your application. We will get back to you as soon as possible.",
+        "03": "Hope to become your teammate in the future."
+      }
+    }
+  },
+  "text_change_language": "ベトナム向け採用サイト",
+  "confirm_title": "ベトナム向け採用サイトへ遷移します。",
+  "confirm_subtitle": "ベトナム向け採用サイトでは、ベトナム語で現地の採用コンテンツが表示されます。\n\n遷移してよろしいですか？"
+}

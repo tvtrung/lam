@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="217.726" height="227.904" viewBox="0 0 217.726 227.904">
+  <g id="Group_6136" data-name="Group 6136" transform="translate(-9.517 -11.453)">
+    <path id="Path_13" data-name="Path 13" d="M592.74,224.7V330.747a108.368,108.368,0,1,1-216.737,0" transform="translate(-365.991 -212.751)" fill="none" stroke="#8eb84a" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.989" stroke-dasharray="4"/>
+    <path id="Path_32" data-name="Path 32" d="M423.235,329.287H460l-18.38,28.144Z" transform="translate(-323.235 -118.074)" fill="#8eb84a"/>
+    <circle id="Ellipse_23" data-name="Ellipse 23" cx="98" cy="98" r="98" transform="translate(19.933 20.153)" fill="#8eb84a"/>
+    <circle id="Ellipse_24" data-name="Ellipse 24" cx="87" cy="87" r="87" transform="translate(30.933 31.153)" fill="#fff"/>
+    <g id="Group_6135" data-name="Group 6135">
+      <path id="Path_31078" data-name="Path 31078" d="M94.1,0,.8,146.914" transform="translate(68.929 43.724)" fill="none" stroke="#dedede" stroke-width="1"/>
+      <g id="Group_6134" data-name="Group 6134">
+        <g id="Group_488" data-name="Group 488" transform="translate(96.294 37.56)">
+          <text id="Project_MANAGER" data-name="Project MANAGER" transform="translate(0 23.42)" fill="#3d403d" font-size="4" font-family="Helvetica"><tspan x="0" y="0">PROJECT MANAGER</tspan></text>
+          <g id="Group_240" data-name="Group 240" transform="translate(13.922 0)">
+            <g id="Group_236" data-name="Group 236">
+              <circle id="Ellipse_6" data-name="Ellipse 6" cx="5.084" cy="5.084" r="5.084" transform="translate(3.988)" fill="none" stroke="#3d403d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+              <path id="Path_24" data-name="Path 24" d="M181.357,276.838c0-4.041,4.062-7.317,9.073-7.317s9.073,3.276,9.073,7.317" transform="translate(-181.357 -259.222)" fill="none" stroke="#3d403d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+            </g>
+          </g>
+        </g>
+        <g id="Group_489" data-name="Group 489" transform="translate(100.184 73.625)">
+          <g id="kRdJUD.tif" transform="translate(0 0)">
+            <g id="Group_260" data-name="Group 260">
+              <g id="Group_469" data-name="Group 469" transform="translate(0 0)">
+                <path id="Path_63" data-name="Path 63" d="M4230.419-445.246c.011-.065.026-.13.031-.2.046-.553.237-.81.662-.842.32-.024.64-.025.959-.026,1.572-.005,3.143-.011,4.713-.006a10.117,10.117,0,0,1,1.061.075.8.8,0,0,1,.55.977,1.565,1.565,0,0,1-.323.755c-.439.569-.877,1.141-1.346,1.75.4.417.759.833,1.147,1.2a6.449,6.449,0,0,0,3.451,1.847,3.75,3.75,0,0,0,3.452-1.112,6.067,6.067,0,0,0,.692-.992c.159-.253.279-.366.4-.292s.165.281.12.588a6.64,6.64,0,0,1-.576,1.776c-1.254,2.807-3.142,4.325-5.572,4.725-.2.034-.407.055-.612.083h-.514a.878.878,0,0,0-.15-.035,7.6,7.6,0,0,1-5.213-2.83c-.063-.071-.125-.146-.2-.23-.444.588-.87,1.175-1.317,1.732a1.682,1.682,0,0,1-.555.461c-.352.169-.695-.106-.8-.582-.025-.122-.044-.247-.067-.37Zm15.151,4.092a10.728,10.728,0,0,1-.848.924,4.1,4.1,0,0,1-3.615.926,6.582,6.582,0,0,1-2.969-1.49,10.242,10.242,0,0,1-1.638-1.7c-.179-.236-.172-.328,0-.561.444-.587.89-1.172,1.329-1.765a1.37,1.37,0,0,0,.2-.385c.109-.338-.023-.6-.3-.629-.233-.02-.467-.042-.7-.042q-2.827,0-5.654,0a2.626,2.626,0,0,0-.307.034c-.165.02-.264.133-.278.355s-.029.42-.029.63q-.007,3.717-.006,7.435a6.654,6.654,0,0,0,.037.809c.041.331.242.466.472.322a1.349,1.349,0,0,0,.331-.313c.417-.537.827-1.082,1.237-1.627.332-.44.294-.433.651-.018,1.835,2.133,3.963,3.156,6.417,2.767a6.674,6.674,0,0,0,4.893-3.8A9.535,9.535,0,0,0,4245.57-441.154Z" transform="translate(-4230.419 458.025)" fill="#0e1214"/>
+                <path id="Path_64" data-name="Path 64" d="M4300.846-646.023c.535-.782,1.055-1.543,1.573-2.307a.721.721,0,0,1,.6-.38c.417,0,.71.357.762.96.027.312.039.628.039.943q0,4.393-.009,8.786c0,.261-.009.522-.023.783-.038.709-.248,1.015-.737,1.077a2.462,2.462,0,0,1-.316.018q-3.186,0-6.375-.014a4.293,4.293,0,0,1-.613-.058.946.946,0,0,1-.593-1.166,2.5,2.5,0,0,1,.322-.857c.42-.663.871-1.286,1.309-1.925.042-.063.083-.128.148-.229-.316-.384-.613-.78-.935-1.127a7.685,7.685,0,0,0-3.972-2.5,3.9,3.9,0,0,0-4.281,1.963,5.842,5.842,0,0,0-.333.615c-.146.282-.284.382-.417.29a.643.643,0,0,1-.123-.671,23.2,23.2,0,0,1,.781-2.5c1.265-3.012,3.156-4.721,5.537-5.227,2.837-.6,5.326.6,7.48,3.309C4300.718-646.179,4300.77-646.116,4300.846-646.023Zm-13.474,3.676.044.071a1.289,1.289,0,0,1,.084-.179,4.326,4.326,0,0,1,3.647-2.187,5.51,5.51,0,0,1,2.825.859,10.388,10.388,0,0,1,3.23,3.082c.2.288.2.383,0,.668-.478.7-.957,1.39-1.431,2.091a1.781,1.781,0,0,0-.223.428c-.145.43,0,.785.327.814s.633.054.95.055q2.9,0,5.8-.011a3.9,3.9,0,0,0,.465-.04c.191-.024.313-.162.327-.455.012-.26.028-.521.029-.781q.006-4.419.007-8.839c0-.323-.01-.648-.04-.968-.026-.281-.151-.413-.344-.44s-.307.1-.425.273c-.521.76-1.046,1.516-1.568,2.276-.217.316-.248.321-.469.019a9.15,9.15,0,0,0-2.629-2.515,6.029,6.029,0,0,0-7.4.4A9.879,9.879,0,0,0,4287.372-642.346Z" transform="translate(-4282.248 649.704)" fill="#0e1214"/>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g id="Group_490" data-name="Group 490" transform="translate(110.215 84.69)">
+          <g id="Group_471" data-name="Group 471" transform="translate(0 0)">
+            <g id="Group_461" data-name="Group 461" transform="translate(27.056)">
+              <text id="Project_MANAGER-2" data-name="Project MANAGER" transform="translate(0 23.363)" fill="#3d403d" font-size="4" font-family="Helvetica"><tspan x="0" y="0">PROJECT MANAGER</tspan></text>
+              <g id="Group_240-2" data-name="Group 240" transform="translate(14.71)">
+                <g id="Group_236-2" data-name="Group 236">
+                  <circle id="Ellipse_6-2" data-name="Ellipse 6" cx="5.084" cy="5.084" r="5.084" transform="translate(3.988)" fill="none" stroke="#3d403d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                  <path id="Path_24-2" data-name="Path 24" d="M181.357,276.838c0-4.041,4.062-7.317,9.073-7.317s9.073,3.276,9.073,7.317" transform="translate(-181.357 -259.222)" fill="none" stroke="#3d403d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                </g>
+              </g>
+            </g>
+            <g id="Group_462" data-name="Group 462" transform="translate(0 52.617)">
+              <text id="ENGINEER_TEAM" data-name="ENGINEER TEAM" transform="translate(0.43 24.098)" fill="#3d403d" font-size="4" font-family="Helvetica"><tspan x="0" y="0">ENGINEER TEAM</tspan></text>
+              <g id="Group_240-3" data-name="Group 240">
+                <g id="Group_236-3" data-name="Group 236" transform="translate(9.92)">
+                  <circle id="Ellipse_6-3" data-name="Ellipse 6" cx="5.084" cy="5.084" r="5.084" transform="translate(3.988)" fill="none" stroke="#3d403d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                  <path id="Path_24-3" data-name="Path 24" d="M181.357,276.838c0-4.041,4.062-7.317,9.073-7.317s9.073,3.276,9.073,7.317" transform="translate(-181.357 -259.222)" fill="none" stroke="#3d403d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                </g>
+                <g id="Group_237" data-name="Group 237" transform="translate(0 3.751)">
+                  <circle id="Ellipse_6-4" data-name="Ellipse 6" cx="2.919" cy="2.919" r="2.919" transform="translate(2.29)" fill="none" stroke="#3d403d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+                  <path id="Path_24-4" data-name="Path 24" d="M181.357,273.722c0-2.32,2.332-4.2,5.209-4.2s5.209,1.881,5.209,4.2" transform="translate(-181.357 -263.608)" fill="none" stroke="#3d403d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+                </g>
+                <g id="Group_238" data-name="Group 238" transform="translate(27.567 3.751)">
+                  <circle id="Ellipse_6-5" data-name="Ellipse 6" cx="2.919" cy="2.919" r="2.919" transform="translate(2.29)" fill="none" stroke="#3d403d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+                  <path id="Path_24-5" data-name="Path 24" d="M181.357,273.722c0-2.32,2.332-4.2,5.209-4.2s5.209,1.881,5.209,4.2" transform="translate(-181.357 -263.608)" fill="none" stroke="#3d403d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+                </g>
+              </g>
+            </g>
+            <g id="Group_463" data-name="Group 463" transform="translate(47.568 52.617)">
+              <text id="QC_TEAM" data-name="QC TEAM" transform="translate(8.65 23.779)" fill="#3d403d" font-size="4" font-family="Helvetica"><tspan x="0" y="0">QC TEAM</tspan></text>
+              <g id="Group_240-4" data-name="Group 240" transform="translate(0)">
+                <g id="Group_236-4" data-name="Group 236" transform="translate(10.019)">
+                  <circle id="Ellipse_6-6" data-name="Ellipse 6" cx="5.084" cy="5.084" r="5.084" transform="translate(3.988)" fill="none" stroke="#3d403d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                  <path id="Path_24-6" data-name="Path 24" d="M181.357,276.838c0-4.041,4.062-7.317,9.073-7.317s9.073,3.276,9.073,7.317" transform="translate(-181.357 -259.222)" fill="none" stroke="#3d403d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                </g>
+                <g id="Group_237-2" data-name="Group 237" transform="translate(0 3.751)">
+                  <circle id="Ellipse_6-7" data-name="Ellipse 6" cx="2.919" cy="2.919" r="2.919" transform="translate(2.29)" fill="none" stroke="#3d403d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+                  <path id="Path_24-7" data-name="Path 24" d="M181.357,273.722c0-2.32,2.332-4.2,5.209-4.2s5.209,1.881,5.209,4.2" transform="translate(-181.357 -263.608)" fill="none" stroke="#3d403d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+                </g>
+                <g id="Group_238-2" data-name="Group 238" transform="translate(27.766 3.751)">
+                  <circle id="Ellipse_6-8" data-name="Ellipse 6" cx="2.919" cy="2.919" r="2.919" transform="translate(2.29)" fill="none" stroke="#3d403d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+                  <path id="Path_24-8" data-name="Path 24" d="M181.357,273.722c0-2.32,2.332-4.2,5.209-4.2s5.209,1.881,5.209,4.2" transform="translate(-181.357 -263.608)" fill="none" stroke="#3d403d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+                </g>
+              </g>
+            </g>
+          </g>
+          <g id="Path_125" data-name="Path 125" transform="translate(20.006 16.987)" fill="none" opacity="0.156">
+            <path d="M27.458,0,54.917,43.386H0Z" stroke="none"/>
+            <path d="M 27.45841979980469 1.869918823242188 L 1.816329956054688 42.3860969543457 L 53.10050964355469 42.3860969543457 L 27.45841979980469 1.869918823242188 M 27.45841979980469 0 L 54.91683959960938 43.3860969543457 L 0 43.3860969543457 L 27.45841979980469 0 Z" stroke="none" fill="#979ea2"/>
+          </g>
+        </g>
+        <g id="Group_491" data-name="Group 491" transform="translate(42.444 126.297)">
+          <text id="DEVELOPMENT_TEAM_" data-name="DEVELOPMENT TEAM " transform="translate(0 23.453)" fill="#3d403d" font-size="4" font-family="Helvetica"><tspan x="0" y="0">DEVELOPMENT TEAM </tspan></text>
+          <g id="Group_240-5" data-name="Group 240" transform="translate(5.238 0)">
+            <g id="Group_236-5" data-name="Group 236" transform="translate(9.473)">
+              <circle id="Ellipse_6-9" data-name="Ellipse 6" cx="5.084" cy="5.084" r="5.084" transform="translate(3.988)" fill="none" stroke="#3d403d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+              <path id="Path_24-9" data-name="Path 24" d="M181.357,276.838c0-4.041,4.062-7.317,9.073-7.317s9.073,3.276,9.073,7.317" transform="translate(-181.357 -259.441)" fill="none" stroke="#3d403d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+            </g>
+            <g id="Group_237-3" data-name="Group 237" transform="translate(0 3.641)">
+              <circle id="Ellipse_6-10" data-name="Ellipse 6" cx="2.919" cy="2.919" r="2.919" transform="translate(2.29)" fill="none" stroke="#3d403d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+              <path id="Path_24-10" data-name="Path 24" d="M181.357,273.722c0-2.32,2.332-4.2,5.209-4.2s5.209,1.881,5.209,4.2" transform="translate(-181.357 -263.608)" fill="none" stroke="#3d403d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+            </g>
+            <g id="Group_238-3" data-name="Group 238" transform="translate(26.673 3.641)">
+              <circle id="Ellipse_6-11" data-name="Ellipse 6" cx="2.919" cy="2.919" r="2.919" transform="translate(2.29)" fill="none" stroke="#3d403d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+              <path id="Path_24-11" data-name="Path 24" d="M181.357,273.722c0-2.32,2.332-4.2,5.209-4.2s5.209,1.881,5.209,4.2" transform="translate(-181.357 -263.608)" fill="none" stroke="#3d403d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+            </g>
+          </g>
+        </g>
+        <g id="Group_492" data-name="Group 492" transform="translate(52.811 97.873)">
+          <text id="DEVELOPMENT_TEAM_2" data-name="DEVELOPMENT TEAM " transform="translate(0 23.453)" fill="#3d403d" font-size="4" font-family="Helvetica"><tspan x="0" y="0">DEVELOPMENT TEAM </tspan></text>
+          <g id="Group_240-6" data-name="Group 240" transform="translate(6.398 0)">
+            <g id="Group_236-6" data-name="Group 236" transform="translate(9.473)">
+              <circle id="Ellipse_6-12" data-name="Ellipse 6" cx="5.084" cy="5.084" r="5.084" transform="translate(3.988)" fill="none" stroke="#3d403d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+              <path id="Path_24-12" data-name="Path 24" d="M181.357,276.838c0-4.041,4.062-7.317,9.073-7.317s9.073,3.276,9.073,7.317" transform="translate(-181.357 -259.441)" fill="none" stroke="#3d403d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+            </g>
+            <g id="Group_237-4" data-name="Group 237" transform="translate(0 3.641)">
+              <circle id="Ellipse_6-13" data-name="Ellipse 6" cx="2.919" cy="2.919" r="2.919" transform="translate(2.29)" fill="none" stroke="#3d403d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+              <path id="Path_24-13" data-name="Path 24" d="M181.357,273.722c0-2.32,2.332-4.2,5.209-4.2s5.209,1.881,5.209,4.2" transform="translate(-181.357 -263.608)" fill="none" stroke="#3d403d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+            </g>
+            <g id="Group_238-4" data-name="Group 238" transform="translate(26.673 3.641)">
+              <circle id="Ellipse_6-14" data-name="Ellipse 6" cx="2.919" cy="2.919" r="2.919" transform="translate(2.29)" fill="none" stroke="#3d403d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+              <path id="Path_24-14" data-name="Path 24" d="M181.357,273.722c0-2.32,2.332-4.2,5.209-4.2s5.209,1.881,5.209,4.2" transform="translate(-181.357 -263.608)" fill="none" stroke="#3d403d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+            </g>
+          </g>
+        </g>
+        <g id="Group_493" data-name="Group 493" transform="translate(41.284 69.449)">
+          <text id="DEVELOPMENT_TEAM_3" data-name="DEVELOPMENT TEAM " transform="translate(0 23.453)" fill="#3d403d" font-size="4" font-family="Helvetica"><tspan x="0" y="0">DEVELOPMENT TEAM </tspan></text>
+          <g id="Group_240-7" data-name="Group 240" transform="translate(6.398 0)">
+            <g id="Group_236-7" data-name="Group 236" transform="translate(9.473)">
+              <circle id="Ellipse_6-15" data-name="Ellipse 6" cx="5.084" cy="5.084" r="5.084" transform="translate(3.988)" fill="none" stroke="#3d403d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+              <path id="Path_24-15" data-name="Path 24" d="M181.357,276.838c0-4.041,4.062-7.317,9.073-7.317s9.073,3.276,9.073,7.317" transform="translate(-181.357 -259.441)" fill="none" stroke="#3d403d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+            </g>
+            <g id="Group_237-5" data-name="Group 237" transform="translate(0 3.641)">
+              <circle id="Ellipse_6-16" data-name="Ellipse 6" cx="2.919" cy="2.919" r="2.919" transform="translate(2.29)" fill="none" stroke="#3d403d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+              <path id="Path_24-16" data-name="Path 24" d="M181.357,273.722c0-2.32,2.332-4.2,5.209-4.2s5.209,1.881,5.209,4.2" transform="translate(-181.357 -263.608)" fill="none" stroke="#3d403d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+            </g>
+            <g id="Group_238-5" data-name="Group 238" transform="translate(26.673 3.641)">
+              <circle id="Ellipse_6-17" data-name="Ellipse 6" cx="2.919" cy="2.919" r="2.919" transform="translate(2.29)" fill="none" stroke="#3d403d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+              <path id="Path_24-17" data-name="Path 24" d="M181.357,273.722c0-2.32,2.332-4.2,5.209-4.2s5.209,1.881,5.209,4.2" transform="translate(-181.357 -263.608)" fill="none" stroke="#3d403d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

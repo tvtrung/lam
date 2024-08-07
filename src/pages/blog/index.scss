@@ -1,0 +1,199 @@
+.fb_dialog.fb_dialog_advanced {
+  display: none !important;
+}
+.p-blog {
+  font-family: Encode Sans,sans-serif;
+  // this setting for sticky sidebar can be scrolled
+  .t-general__main {
+    overflow: visible;
+  }
+
+  .o-blog-hero {
+    z-index: get-zindex('background');
+  }
+
+  &__container {
+    z-index: get-zindex('foreground');
+    padding-bottom: 70px;
+    @include sp {
+      margin-top: -121px;
+    }
+
+    @include pc {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: flex-start;
+      justify-content: flex-end;
+      padding-bottom: 118px;
+      padding-left: 81px;
+      margin-top: -344px;
+      overflow: visible;
+    }
+    @include tablet {
+      padding-bottom: convert-vw(118);
+      padding-left: convert-vw(81);
+      margin-top: convert-vw(-344);
+    }
+
+    &.o-container {
+      max-width: 1282px;
+    }
+  }
+
+  &__sidebar {
+    @include pc {
+      position: sticky;
+      top: 112px;
+      flex: 1;
+      margin-left: 65px;
+    }
+
+    @include sp {
+      position: relative;
+      z-index: get-zindex('stickybuttons');
+      padding: 0 15px;
+    }
+    @include tablet {
+      top: convert-vw(112);
+      margin-left: convert-vw(65);
+    }
+
+    &-heading {
+      @include pc {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      @include sp {
+        margin-bottom: 32px;
+        text-align: center;
+      }
+    }
+  }
+
+  &__social {
+    @include sp {
+      margin-bottom: 30px;
+      margin-left: 16px;
+    }
+    @include pc {
+      margin-top: 29px;
+      margin-bottom: 48px;
+    }
+    @include tablet {
+      margin-top: convert-vw(29);
+      margin-bottom: convert-vw(48);
+    }
+  }
+
+  &__body {
+    .jp-alert{
+        border: solid #8eb84a;
+        border-width: 2px;
+        border-radius: 7px;
+        padding: 10px 16px;
+        font-size: 12px;
+        background: #f8feef;
+        margin-bottom: 25px;
+        line-height: 1.5;
+    }
+    @include pc {
+      max-width: 850px;
+      width: 850px;
+    }
+    @include sp {
+      margin-top: 31px;
+    }
+  }
+
+  &__blog-list {
+    margin-top: 32px;
+    @include tablet {
+      margin-top: convert-vw(32);
+    }
+  }
+
+  &__cat {
+    margin-top: 32px;
+    @include tablet {
+      margin-top: convert-vw(32);
+    }
+  }
+
+  &__search-notification {
+    margin-top: 32px;
+    @include u-fz(18, 27, false, true);
+    @include tablet {
+      margin-top: convert-vw(32);
+    }
+  }
+
+  .gsc-adBlock, form.gsc-search-box.gsc-search-box-tools {
+    display: none;
+  }
+}
+
+.p-blog-detail {
+  position: relative;
+  font-family: Encode Sans,sans-serif;
+  .o-blog-banner {
+    @include sp {
+      position: absolute;
+      width: 100%;
+    }
+  }
+
+  &__content {
+    word-break: break-word;
+    pre {
+      white-space: break-spaces;
+    }
+    iframe {
+      width: 100%;
+    }
+    @include sp {
+      // padding-top: calc(201 / 326 * 100%);
+      iframe {
+        height: auto;
+      }
+    }
+    @include pc {
+      margin-top: 150px;
+      padding-bottom: 48px;
+      margin-bottom: calc(-105px - 158px + 113px);
+      transform: translateY(-105px);
+      iframe {
+        min-height: 600px;
+      }
+    }
+    @include tablet {
+      padding-bottom: convert-vw(48);
+      margin-bottom: calc(convert-vw(-105px) - convert-vw(148px) + convert-vw(84px));
+      transform: translateY(convert-vw(-105px));
+      iframe {
+        width: 100%;
+        min-height: 315px;
+      }
+    }
+
+    & > .o-blog-wrapper {
+      z-index: get-zindex('foreground');
+
+      @include sp {
+        padding: 20px 25px 25px;
+      }
+    }
+
+    & > .o-blog-related {
+      @include sp {
+        margin-bottom: 84px;
+      }
+      @include pc {
+        transform: translateY(-142px);
+      }
+
+      @include tablet {
+        transform: translateY(convert-vw(-142px));
+      }
+    }
+  }
+}

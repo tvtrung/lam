@@ -1,0 +1,34 @@
+.a-scroll-top {
+  $size-sp: 48px;
+  $size-pc: 64px;
+
+  display: block;
+  width: $size-sp;
+  height: $size-sp;
+  cursor: pointer;
+  background: get-color('white') url('~images/directional.svg') no-repeat center center/ 16px auto;
+  border-radius: 50%;
+  @include transitions(background-color, 0.3s ease-out);
+
+  @include sp {
+    border: 1px solid get-color('border', 'primary');
+  }
+
+  @include pc {
+    width: $size-pc;
+    height: $size-pc;
+    background-size: 28px auto;
+  }
+
+  @include tablet {
+    width: convert-vw($size-pc);
+    height: convert-vw($size-pc);
+    background-size: convert-vw(28) auto;
+  }
+
+  &:hover {
+    @include only-pc {
+      background-color: get-color('text', 'highlight');
+    }
+  }
+}

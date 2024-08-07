@@ -1,0 +1,15 @@
+.a-map {
+  width: 100%;
+  height: 402px;
+  background-color: get-color('base', 'white');
+  // filter: grayscale(100%);
+
+  @include pc {
+    height: 562px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}

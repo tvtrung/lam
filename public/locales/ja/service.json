@@ -1,0 +1,164 @@
+{
+  "kv": {
+    "title": "サービス",
+    "feature01": "ソフトウェア開発",
+    "feature02": "要求に応じた柔軟な設計",
+    "feature03": "ラボ型オフショア開発事業",
+    "content01": "LAMPARTは日本法人向けのコンサルティング事業、ソフトウェア開発及び保守、Webサイトのデザイン及びWeb制作を提供しています。",
+    "content02": "同時にベトナム法人設立を希望するパートナー向けに、法人設立と人材採用サービスを提供しています。"
+  },
+  "company": {
+    "title": "主要取引先",
+    "content01": "Wakka Inc.はシステム開発やWeb制作に関するサービスを提供しています。",
+    "content02": "また、Wakka Inc.常駐のSE、Webディレクターや他従業員と共にベトナム法人設立及び総務人事業務についてのコンサルティング事業を行っています。私たちはお客様へ最善なサービスを提供するように努めています。同時にベトナムエンジニアがアジア全体へ日本の品質を広める考えを持っており、知識及びスキルをLAMPART従業員へ共有しています。",
+    "content03": ""
+  },
+  "highlight": {
+    "01": {
+      "title": {
+        "01": "大手飲料水メーカーの業務用システム構築",
+        "02": ""
+      },
+      "development": {
+        "label": "プロセス",
+        "development01": {
+          "content01": "要件定義",
+          "content02": ""
+        },
+        "development02": {
+          "content": "設計"
+        },
+        "development03": {
+          "content": "開発"
+        },
+        "development04": {
+          "content": "テスト"
+        },
+        "development05": {
+          "content": "保守"
+        }
+      },
+      "system": {
+        "label": "システム概要",
+        "content": "大手飲料水メーカーのポイント機能システム"
+      },
+      "person-in-charge": {
+        "label": "担当"
+      },
+      "tech": {
+        "label": "Technologies"
+      }
+    },
+    "02": {
+      "title": "会員制ビール配送サービスの業務用システム構築",
+      "development": {
+        "label": "Process",
+        "development01": {
+          "content01": "要件定義",
+          "content02": ""
+        },
+        "development02": {
+          "content": "設計"
+        },
+        "development03": {
+          "content": "開発"
+        },
+        "development04": {
+          "content": "テスト"
+        },
+        "development05": {
+          "content": "保守"
+        }
+      },
+      "system": {
+        "label": "System Overview",
+        "content": "会員制ビール配送サービスの顧客管理・契約管理・受注管理・請求管理・収納管理・販売管理システム"
+      },
+      "person-in-charge": {
+        "label": "Person In Charge"
+      },
+      "tech": {
+        "label": "Technologies"
+      }
+    },
+    "03": {
+      "title": "各種業務用システムのモバイルアプリ構築",
+      "development": {
+        "label": "Process",
+        "development01": {
+          "content01": "要件定義",
+          "content02": ""
+        },
+        "development02": {
+          "content": "設計"
+        },
+        "development03": {
+          "content": "開発"
+        },
+        "development04": {
+          "content": "テスト"
+        },
+        "development05": {
+          "content": "保守"
+        }
+      },
+      "system": {
+        "label": "System Overview",
+        "content": "各種業務用システムのモバイルアプリ対応"
+      },
+      "person-in-charge": {
+        "label": "Person In Charge"
+      },
+      "tech": {
+        "label": "Technologies"
+      }
+    }
+  },
+  "tech": {
+    "title": "TECHNOLOGY",
+    "laravel": "Laravelは、PHPプログラミング言語に基づいて開発された柔軟で多機能なフレームワークであり、オープンソースで幅広く使用されています。Laravelは、自由に開発ができる柔軟性、多機能性、MVCモデルの優れた特徴を持っており、開発者が見つけやすいフレームワークでもありプロジェクトの開発速度を向上できます。更に、Laravelは大人数での大規模開発向き、優れたセキュリティなどがあります。Laravelはこれらの大きな特徴を持っており、LAMPARTはLaravelを使用していくつかのプロジェクトを開発しています。",
+    "vue": "現在、市場では多くのJavaScriptフレームワークがあり、Vue.jsは最も人気のあるJavaScriptフレームワークの1つです。LAMPARTは、Vue.jsを組み合わせて使用\u200b\u200bする機会が多く使用技術の選択肢の1つで、VueJSを使用することでフロントエンド側の開発が迅速になります。Vue.jsを使用する際に、Vuetify、Framework NuxtJS (Auth, API, Proxy)等も一緒に使用します。LAMPARTではこられの技術を最大限に活用しています。"
+  },
+  "process": {
+    "title": "十分な開発チェック体制",
+    "content": "常に日本人のチェック入れる事により、お客様に日系会社へ依頼するのと変わらない品質や安心感を提供いたします。"
+  },
+  "diagram": {
+    "label": {
+      "01": "LAMPART / ベトナム",
+      "02": "WAKKA / 日本"
+    },
+    "01": {
+      "title": "ご契約",
+      "scope": "フェーズ1",
+      "content": "クライアント様との契約に際して、弊社日本人スタッフが窓口を担当いたします。"
+    },
+    "02": {
+      "title01": "ヒアリング・",
+      "title02": "要件定義・設計",
+      "title03": "",
+      "scope": "フェーズ2",
+      "content": "クライアント様からの要望を元に、要件定義と設計を行います。弊社日本人スタッフが窓口を担当いたします。"
+    },
+    "03": {
+      "title01": "ベトナムでの設計・",
+      "title02": "仕様書作成・指示",
+      "title03": "",
+      "scope": "フェーズ3",
+      "content01": "日本人スタッフも常駐。開発体制によりベトナムでも設計作業可能です。",
+      "content02": "更に開発経験のあるBA STAFF、BrSE STAFFが事細かく指示を出します。"
+    },
+    "04": {
+      "title01": "ベトナムにて",
+      "title02": "開発・テスト",
+      "scope": "フェーズ4",
+      "content": "各開発チームの1人1人やリーダーが細かくチェックする体制、更にQC TEAMによるキメ細かいチェック体制を導入しています。"
+    },
+    "05": {
+      "title01": "日本での最終",
+      "title02": "テスト・リリース",
+      "scope": "フェーズ5",
+      "content": "最後に弊社SEが品質をチェックしリリース作業を行います。"
+    }
+  }
+}

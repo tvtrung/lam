@@ -1,0 +1,19 @@
+.a-image {
+  display: inline-flex;
+  visibility: inherit;
+
+  &--lazy {
+    opacity: 0%;
+    transition: opacity 0.35s ease-in;
+  }
+
+  &--loaded {
+    opacity: 100%;
+  }
+
+  &--filled {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+}

@@ -1,0 +1,94 @@
+.o-modal {
+  $root: &;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: get-zindex('modal');
+  width: 100vw;
+  height: 100vh;
+  padding: 161px 24px;
+  overflow-y: auto;
+  visibility: hidden;
+  background: rgba(get-color('primary'), 0.85);
+  opacity: 0%;
+  @include transitions(opacity transform, 0.3s ease);
+
+  @include pc {
+    padding: 176px 150px;
+  }
+  @include tablet {
+    padding: convert-vw(176) convert-vw(150);
+  }
+  @include tablet-small {
+    padding-right: convert-vw(80);
+    padding-left: convert-vw(80);
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: get-zindex('background');
+    width: 100%;
+    height: 100%;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 48px;
+    line-height: 1;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    @include pc {
+      right: 49px;
+    }
+    @include both-sp-and-tablet-small {
+      right: 27px;
+    }
+
+    & > .a-icon {
+      width: 24px;
+      height: 24px;
+      @include tablet {
+        width: convert-vw(24px);
+        height: convert-vw(24px);
+      }
+    }
+  }
+
+  &__container {
+    position: relative;
+    padding: 105px 27px 45px;
+    background: get-color('white');
+    border-radius: 7px;
+    @include pc {
+      padding-top: 91px;
+      padding-bottom: 79px;
+      border-radius: 16px;
+    }
+    @include tablet {
+      padding-top: convert-vw(91px);
+      padding-bottom: convert-vw(79px);
+    }
+  }
+
+  &--opened {
+    visibility: visible;
+    opacity: 100%;
+    #{$root}__container {
+      animation: fade-in-up 0.5s ease forwards;
+    }
+  }
+  .text-center {
+    text-align: center;
+    white-space: pre-wrap;
+  }
+  .h-20 {
+    height: 20px;
+  }
+  .h-50 {
+    height: 50px;
+  }
+}

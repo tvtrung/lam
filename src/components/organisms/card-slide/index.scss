@@ -1,0 +1,77 @@
+.o-card-slide {
+  &__nav-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 24px;
+
+    @include pc {
+      margin-bottom: 46px;
+    }
+    @include tablet {
+      margin-bottom: convert-vw(46);
+    }
+    @include sp {
+      visibility: hidden;
+      opacity: 0%;
+    }
+  }
+
+  &__prev {
+    .a-icon {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__nav {
+    width: 56px;
+    height: 56px;
+    font-size: 16px;
+    cursor: pointer;
+    background: none;
+    border: 0;
+    outline: none;
+    box-shadow: none;
+
+    &:hover:not(.swiper-button-disabled) {
+      @include only-pc {
+        opacity: 70%;
+      }
+    }
+
+    &.swiper-button-disabled {
+      .a-icon {
+        color: #959ead;
+      }
+    }
+  }
+
+  &__swiper {
+    @include pc {
+      margin: -35px -16px !important;
+    }
+
+    @include sp {
+      overflow: visible !important;
+    }
+
+    .m-card {
+      height: 100%;
+
+      > a {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+
+      &__body {
+        flex: auto;
+      }
+    }
+  }
+
+  &__item {
+    @include pc {
+      padding: 35px 12px;
+    }
+  }
+}

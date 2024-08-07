@@ -1,0 +1,45 @@
+.m-gallery {
+  .width100percent {
+    width: 100%;
+  }
+  @include pc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 16px;
+  }
+
+  &__img-wrapper {
+    cursor: pointer;
+
+    @include sp {
+      margin-bottom: 9px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    @include pc {
+      flex: 1 1 calc(50% - 16px);
+    }
+
+    img {
+      @include transitions(transform, 0.5s $transition-cubic);
+    }
+
+    & > .a-image {
+      @include aspect-ratio(326, 152);
+      @include pc {
+        @include aspect-ratio(562, 262);
+      }
+    }
+
+    &:hover {
+      @include pc {
+        img {
+          transform: scale(1.03);
+        }
+      }
+    }
+  }
+}

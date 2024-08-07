@@ -1,0 +1,40 @@
+.o-top-blog {
+  padding: 51px 0 45px;
+  overflow: hidden;
+
+  @include pc {
+    padding: 99px 0 97px;
+  }
+  @include tablet {
+    padding: convert-vw(100) 0 convert-vw(97);
+  }
+
+  &__title {
+    @include font-other(vi) {
+      font-family: $font-family-saira;
+    }
+  }
+
+  &__card-slide {
+    margin-top: -45px;
+
+    @include pc {
+      margin-top: -56px;
+    }
+    @include tablet {
+      margin-top: convert-vw(-56);
+    }
+  }
+
+  &__button {
+    display: block;
+    margin-top: 32px;
+    @include pc {
+      width: fit-content;
+      margin: 33px auto 0;
+    }
+    @include tablet {
+      margin-top: convert-vw(33);
+    }
+  }
+}

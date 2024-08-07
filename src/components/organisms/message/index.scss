@@ -1,0 +1,140 @@
+.o-message {
+  $width-pc: 423;
+  $height-pc: 460;
+  $width-sp: 291;
+  $height-sp: 316;
+
+  padding: 106px 0 64px;
+  background-color: get-color('base', 'white');
+  word-break: break-word;
+
+  @include pc {
+    padding-top: 160px;
+    padding-bottom: 100px;
+  }
+  @include tablet {
+    padding-top: convert-vw(160);
+    padding-bottom: convert-vw(100);
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+
+    @include sp {
+      flex-direction: column;
+    }
+  }
+
+  &__image-wrapper {
+    @include sp {
+      position: relative;
+      left: 50%;
+      width: $width-sp + px;
+      margin-bottom: 44px;
+      margin-left: 14px;
+      transform: translateX(-50%);
+    }
+    @include pc {
+      width: $width-pc + px;
+      margin-left: 87px;
+    }
+    @include tablet {
+      width: convert-vw(423);
+      margin-left: convert-vw(87);
+    }
+    @include tablet-small {
+      margin-left: 24px;
+    }
+  }
+
+  &__image {
+    @include aspect-ratio($width-sp, $height-sp);
+    @include pc {
+      @include aspect-ratio($width-pc, $height-pc);
+    }
+
+    &:before {
+      position: absolute;
+      top: -41px;
+      left: -32px;
+      width: 186px;
+      height: 289px;
+      content: '';
+      background-color: get-color('green');
+
+      @include pc {
+        top: -60px;
+        left: -47px;
+        width: 270px;
+        height: 420px;
+      }
+      @include tablet {
+        top: convert-vw(-60);
+        left: convert-vw(-47);
+        width: convert-vw(270);
+        height: convert-vw(420);
+      }
+    }
+  }
+
+  &__info {
+    width: 100%;
+
+    @include pc {
+      width: 520px;
+      padding-top: 19px;
+    }
+    @include tablet {
+      width: convert-vw(520);
+      padding-top: convert-vw(19);
+    }
+  }
+
+  &__name {
+    @include u-fz(20, 24);
+
+    margin-bottom: 23px;
+    font-weight: $font-weight-semi-bold;
+    color: get-color(text, 'gray');
+
+    @include pc {
+      margin-bottom: 29px;
+      @include u-fz(20, 26, false, true);
+    }
+    @include tablet {
+      margin-bottom: convert-vw(29);
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    @include font-other(vi) {
+      font-family: $font-family-saira;
+    }
+
+    @include pc {
+      margin-bottom: 22px;
+    }
+    @include tablet {
+      margin-bottom: convert-vw(22);
+    }
+  }
+
+  &__content {
+    @include u-fz(18, 27, false, true);
+
+    margin-bottom: 24px;
+    font-weight: $font-weight-regular;
+    text-align: justify;
+    white-space: pre-line;
+    word-break: break-word;
+
+    @include pc {
+      margin-bottom: 40px;
+    }
+    @include tablet {
+      margin-bottom: convert-vw(48);
+    }
+  }
+}

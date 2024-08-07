@@ -1,0 +1,172 @@
+@use 'sass:math';
+
+.o-process {
+  $root: &;
+  $container-width: 1357px;
+
+  overflow: hidden;
+  word-break: break-word;
+
+  &__kv {
+    position: relative;
+
+    &:before {
+      @include pc {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 181px;
+        left: 0;
+        content: '';
+        background: url('/images/process-background.jpg') no-repeat top center / cover;
+      }
+
+      @include tablet {
+        bottom: convert-vw(181);
+      }
+    }
+
+    &-container {
+      position: relative;
+      padding-bottom: 106px;
+
+      @include pc {
+        display: flex;
+        align-items: flex-start;
+        max-width: $container-width;
+        padding-bottom: 170px;
+      }
+
+      @include tablet {
+        padding-bottom: convert-vw(170);
+      }
+    }
+
+    &-label {
+      position: absolute;
+      font-family: $font-family-encode-sans;
+      font-weight: $font-weight-black;
+      color: get-color('text', 'white');
+
+      @include sp {
+        right: 8px;
+        bottom: 4px;
+        z-index: get-zindex('background');
+        display: inline-block;
+        @include u-fz(60, 60);
+      }
+      @include pc {
+        bottom: -15px;
+        left: 50%;
+        white-space: nowrap;
+        transform: translateX(-50%);
+        @include u-fz(150, 180, false, true);
+      }
+      @include tablet {
+        @include u-fz(130, 180, false, true);
+      }
+
+      br {
+        @include pc {
+          display: none;
+        }
+      }
+    }
+
+    &-content {
+      position: relative;
+      padding: 47px 0 119px;
+
+      @include pc {
+        width: math.percentage(math.div(630, 1440));
+        min-height: 490px;
+        padding: 125px 36px 183px;
+      }
+
+      @include tablet {
+        min-height: convert-vw(490);
+        padding: convert-vw(125) convert-vw(36) convert-vw(183) 0;
+      }
+
+      &:before {
+        @include sp {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: -24px;
+          z-index: get-zindex('background');
+          width: 100vw;
+          content: '';
+          background: url('/images/process-background.jpg') no-repeat top center / cover;
+        }
+      }
+    }
+
+    &-title {
+      @include font-other(vi) {
+        font-family: $font-family-saira;
+      }
+    }
+
+    &-text {
+      margin-top: 43px;
+      color: get-color('white');
+      @include u-fz(18, 27, false, true);
+
+      text-align: justify;
+
+      @include sp {
+        margin-left: 33px;
+      }
+      @include pc {
+        max-width: 450px;
+        margin-top: 28px;
+      }
+      @include tablet {
+        margin-top: convert-vw(28);
+      }
+    }
+
+    &-image {
+      position: relative;
+      z-index: get-zindex('foreground');
+
+      @include sp {
+        width: calc(100% + 24px);
+        margin-top: -76px;
+      }
+      @include pc {
+        flex: auto;
+        align-self: flex-end;
+        margin-bottom: -26px;
+      }
+      @include tablet {
+        margin-bottom: convert-vw(-26);
+      }
+
+      .a-image {
+        @include sp {
+          @include aspect-ratio(737, 437);
+        }
+        @include pc {
+          height: 437px;
+        }
+        @include tablet {
+          height: convert-vw(437);
+        }
+      }
+    }
+  }
+
+  &__body {
+    @include sp {
+      margin-top: 25px;
+    }
+    @include pc {
+      margin-top: 52px;
+    }
+    @include tablet {
+      margin-top: 52px;
+    }
+  }
+}

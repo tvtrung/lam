@@ -1,0 +1,76 @@
+.o-grid-info {
+  @include pc {
+    display: flex;
+  }
+
+  &__image {
+    @include pc {
+      width: 50%;
+    }
+
+    .a-image {
+      @include aspect-ratio(1, 1);
+
+      @include pc {
+        @include aspect-ratio(720, 520);
+      }
+
+      @include pc {
+        height: 100%;
+      }
+    }
+  }
+
+  &__body {
+    padding: 35px 24px 45px;
+
+    @include pc {
+      align-self: center;
+      width: 50%;
+      padding: 60px;
+    }
+
+    @include tablet {
+      padding: convert-vw(60);
+    }
+  }
+
+  &__title {
+    word-break: keep-all;
+    white-space: pre-wrap;
+    font-weight: $font-weight-bold;
+    color: get-color('green');
+    @include u-fz(24, 32);
+
+    @include font-other(vi) {
+      font-family: $font-family-saira;
+    }
+
+    @include pc {
+      @include u-fz(37.5040, 56, false, true);
+    }
+  }
+
+  &__content {
+    margin-top: 17px;
+    font-weight: $font-weight-regular;
+    color: get-color('text', 'primary');
+    text-align: justify;
+    white-space: pre-line;
+    @include u-fz(18, 27, false, true);
+
+    @include pc {
+      margin-top: 24px;
+      @include u-fz(18, 28, false, true);
+    }
+    @include tablet {
+      margin-top: convert-vw(24);
+    }
+  }
+
+  &--reverse {
+    @include pc {
+      flex-direction: row-reverse;
+    }
+  }
+}
