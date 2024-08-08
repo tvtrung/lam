@@ -1,0 +1,114 @@
+.m-block-promise {
+  $root: &;
+
+  padding: 39px 20px;
+  text-align: center;
+  background: get-color('white');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  border: 1px solid get-color('border', 'primary');
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0 0 0 / 5%);
+  @include transitions(background-color border-color, 0.3s ease);
+  @include pc {
+    padding: 55px 20px;
+  }
+
+  @include tablet {
+    padding: convert-vw(55) convert-vw(20);
+    box-shadow: 0 convert-vw(15) convert-vw(35) rgba(0 0 0 / 5%);
+  }
+
+  &__image {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    color: get-color('green');
+
+    @include tablet {
+      width: convert-vw(100);
+      height: convert-vw(100);
+    }
+  }
+
+  &__title {
+    margin-top: 32px;
+    font-weight: $font-weight-regular;
+    color: get-color('text', 'primary');
+    text-align: center;
+    white-space: pre-wrap;
+
+    @include u-fz(16, 24);
+    @include pc {
+      @include u-fz(18, 28, false, true);
+
+      margin-top: 32px;
+    }
+
+    @include tablet {
+      margin-top: convert-vw(32);
+      font-size: convert-vw(16.5)
+    }
+  }
+}
+
+.m-block-promise__vi {
+  $root: &;
+
+  padding: 39px 20px;
+  text-align: center;
+  background: get-color('white');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  border: 1px solid get-color('border', 'primary');
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0 0 0 / 5%);
+  @include transitions(background-color border-color, 0.3s ease);
+  @include pc {
+    padding: 55px 20px;
+  }
+
+  @include tablet {
+    padding: convert-vw(55) convert-vw(20);
+    box-shadow: 0 convert-vw(15) convert-vw(35) rgba(0 0 0 / 5%);
+  }
+
+  &:hover {
+    @include only-pc {
+      background-color: get-color('base', 'hint-of-yellow');
+      border-color: get-color('base', 'hint-of-yellow');
+    }
+  }
+
+  &__image {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    color: get-color('green');
+
+    @include tablet {
+      width: convert-vw(100);
+      height: convert-vw(100);
+    }
+  }
+
+  &__title {
+    margin-top: 32px;
+    font-weight: $font-weight-regular;
+    color: get-color('text', 'primary');
+    text-align: center;
+    white-space: pre-wrap;
+
+    @include u-fz(16, 24);
+    @include pc {
+      @include u-fz(18, 28, false, true);
+
+      margin-top: 32px;
+    }
+
+    @include tablet {
+      margin-top: convert-vw(32);
+      font-size: convert-vw(16.5)
+    }
+  }
+}

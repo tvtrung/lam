@@ -1,0 +1,29 @@
+$default-width: 1140px;
+$medium-width: 1236px;
+$small-width: 778px;
+$padding-gap: 24px;
+
+.o-container {
+  width: 100%;
+  max-width: 100%;
+  padding-right: $padding-gap;
+  padding-left: $padding-gap;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include pc {
+    max-width: $default-width + ($padding-gap * 2);
+  }
+
+  &--small {
+    @include pc {
+      max-width: $small-width + ($padding-gap * 2);
+    }
+  }
+
+  &--medium {
+    @include pc {
+      max-width: $medium-width + ($padding-gap * 2);
+    }
+  }
+}

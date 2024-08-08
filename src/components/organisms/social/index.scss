@@ -1,0 +1,104 @@
+.o-social {
+  $root: &;
+
+  &__title {
+    margin-bottom: 20px;
+    font-family: $font-family-saira;
+    @include u-fz(40, 56, false, true);
+  }
+
+  &__list {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-top: 16px;
+    @include sp {
+      margin-top: 0;
+    }
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 12px;
+      @include sp {
+        margin-right: 10px;
+      }
+      @include tablet {
+        margin-right: convert-vw(10px);
+      }
+    }
+  }
+
+  &__link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+    background: get-color('white');
+    border: 1px solid get-color('border', 'primary');
+    border-radius: 7px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 5%);
+    @include only-pc {
+      &:hover {
+        cursor: pointer;
+        border-color: transparent;
+
+        .a-icon {
+          color: get-color('white');
+          transform: scale(1.2);
+        }
+
+        &:before {
+          top: -20%;
+          left: -20%;
+        }
+      }
+    }
+
+    &--facebook {
+      &:before {
+        background: get-color('social', 'facebook');
+      }
+    }
+
+    &--instagram {
+      &:before {
+        background: get-color('social', 'instagram');
+      }
+    }
+
+    &--linkedin {
+      &:before {
+        background: get-color('social', 'linkedin');
+      }
+    }
+
+    &--youtube {
+      &:before {
+        background: get-color('social', 'youtube');
+      }
+    }
+
+    &:before {
+      position: absolute;
+      top: 80%;
+      left: -120%;
+      width: 140%;
+      height: 140%;
+      content: '';
+      border-radius: 7px;
+      transition: all 0.35s;
+      transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+      transform: rotate(45deg);
+    }
+
+    .a-icon {
+      width: 100%;
+      height: 100%;
+      transition: 0.35s all cubic-bezier(0.31, -0.105, 0.43, 1.59);
+      will-change: transform;
+    }
+  }
+}

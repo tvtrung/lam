@@ -1,0 +1,30 @@
+.p-top {
+  &__promise {
+    margin-top: 51px;
+    @include pc {
+      margin-top: 100px;
+    }
+    @include tablet {
+      margin-top: convert-vw(100);
+    }
+  }
+
+  &__develop {
+    margin-top: 51px;
+
+    @include pc {
+      margin-top: 100px;
+    }
+    @include tablet {
+      margin-top: convert-vw(100);
+    }
+  }
+
+  &__office {
+    @include aspect-ratio(375, 275);
+
+    @include pc {
+      @include aspect-ratio(1440, 562);
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.m-category-selection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-top: 2px solid get-color('border', 'primary');
+  border-bottom: 2px solid get-color('border', 'primary');
+
+  &__title {
+    display: flex;
+    align-items: center;
+    font-family: $font-family-saira;
+    font-weight: $font-weight-bold;
+    color: get-color('green');
+    @include u-fz(24, 36);
+
+    @include pc {
+      @include u-fz(36, 33, false, true);
+    }
+  }
+
+  &__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    margin-right: 14px;
+    background-color: get-color('green');
+
+    .a-icon {
+      width: 50%;
+      height: 50%;
+      color: get-color('white');
+    }
+  }
+
+  &__post {
+    @include u-fz(16, 24);
+
+    @include pc {
+      @include u-fz(18, 27, false, true);
+    }
+  }
+
+  &__num {
+    margin-right: 6px;
+    font-family: $font-family-encode-sans;
+    font-weight: $font-weight-bold;
+    color: get-color('green');
+  }
+}

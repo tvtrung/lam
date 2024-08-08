@@ -1,0 +1,104 @@
+.o-story {
+  position: relative;
+  display: flex;
+
+  @include sp {
+    padding-top: 72px;
+  }
+
+  &:after {
+    position: absolute;
+    font-family: $font-family-encode-sans;
+    font-weight: $font-weight-black;
+    color: get-color('text', 'white');
+    content: 'STORY';
+    @include u-fz(60, 72);
+
+    @include sp {
+      top: 6px;
+      right: 12px;
+    }
+
+    @include pc {
+      right: -43px;
+      bottom: 18px;
+      writing-mode: vertical-rl;
+      transform: scaleY(-1) scaleX(-1);
+      @include u-fz(150, 181, false, true);
+    }
+  }
+
+  &__wrapper {
+    max-width: 100%;
+    padding: 64px 36px 48px;
+    background: url('/images/story-background-sp-img.jpg') no-repeat;
+    background-size: 100% 100%;
+
+    @include pc {
+      width: calc(100% - 135px);
+      padding: 55px 48px 59px 122px;
+      margin: 0;
+      background-image: url('/images/story-background-img.jpg');
+    }
+
+    @include tablet {
+      width: calc(100% - convert-vw(135px));
+      padding: convert-vw(55px) convert-vw(48px) convert-vw(59px) convert-vw(122px);
+    }
+  }
+
+  &__content-wrapper {
+    max-width: 930px;
+
+    @include sp {
+      text-align: justify;
+    }
+
+    .a-text {
+      @include u-fz(18, 27);
+      @include tablet {
+        @include u-fz(18, 27, false, true);
+      }
+    }
+  }
+
+  &__intro {
+    margin-bottom: 24px;
+    white-space: pre-line;
+
+    @include pc {
+      margin-bottom: 32px;
+    }
+    @include tablet {
+      margin-bottom: convert-vw(32px);
+    }
+  }
+
+  &__link {
+    margin-bottom: 30px;
+    @include pc {
+      margin-bottom: 40px;
+    }
+    @include tablet {
+      margin-bottom: convert-vw(40px);
+    }
+  }
+
+  &__title {
+    margin-bottom: 12px;
+    @include u-fz(24, 42);
+
+    @include font-other(vi) {
+      font-family: $font-family-saira;
+    }
+
+    @include pc {
+      margin-bottom: 29px;
+      @include u-fz(36, 42);
+    }
+    @include tablet {
+      margin-bottom: convert-vw(29px);
+      @include u-fz(36, 42, false, true);
+    }
+  }
+}

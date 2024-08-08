@@ -1,0 +1,167 @@
+@use 'sass:math';
+
+.m-block-benefit {
+  $root: &;
+  $icon-size: 56px;
+  $icon-size-sp: 48px;
+
+  position: relative;
+  padding: 23px 32px;
+  background: get-color('white');
+  border: 1px solid get-color('border', 'primary');
+  border-radius: 8px;
+  box-shadow: 0 15px 35px rgba(0 0 0 / 5%);
+
+  @include pc {
+    padding: 39px 32px 61px;
+    text-align: center;
+  }
+
+  @include tablet {
+    padding: convert-vw(39) convert-vw(40) convert-vw(61);
+    box-shadow: 0 convert-vw(15) convert-vw(35) rgba(0 0 0 / 5%);
+  }
+
+  @include sp {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__image {
+    display: inline-block;
+    width: 72px;
+    height: 72px;
+    object-fit: contain !important;
+
+    @include pc {
+      width: 120px;
+      height: 120px;
+    }
+
+    @include tablet {
+      width: convert-vw(120);
+      height: convert-vw(120);
+    }
+
+    @include sp {
+      margin-right: 8px;
+    }
+
+    img {
+      @include sp {
+        min-width: math.percentage(math.div(50, 72)) !important;
+      }
+    }
+  }
+
+  &__title {
+    @include u-fz(18, 24);
+
+    font-weight: $font-weight-bold;
+    color: get-color('text', 'primary');
+    @include font-other(vi) {
+      font-family: $font-family-saira;
+    }
+
+    @include pc {
+      @include u-fz(24, 32, false, true);
+
+      margin-top: 20px;
+    }
+
+    @include tablet {
+      margin-top: convert-vw(20);
+    }
+
+    @include sp {
+      width: calc(100% - 80px);
+    }
+  }
+
+  &__hidden-content {
+    width: 100%;
+    font-weight: $font-weight-regular;
+  }
+
+  &__hidden-text {
+    @include u-fz(16, 28, false, true);
+
+    display: none;
+    margin-top: 12px;
+    color: get-color('text', 'secondary');
+    text-align: justify;
+    text-align-last: left;
+    white-space: pre-line;
+
+    @include pc {
+      margin-top: 18px;
+    }
+
+    @include tablet {
+      margin-top: convert-vw(18);
+    }
+  }
+
+  &__button {
+    position: absolute;
+    bottom: calc(#{-$icon-size-sp} / 2);
+    left: calc(50% - ($icon-size-sp / 2));
+    width: $icon-size-sp;
+    height: $icon-size-sp;
+    cursor: pointer;
+    background-color: get-color('white');
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15.752' height='15.353' viewBox='0 0 15.752 15.353'%3E%3Cpath id='arrow-right' d='M8.669,15.1,15.5,8.271a.84.84,0,0,0,0-1.192L8.669.248a.84.84,0,0,0-1.192,0l-.78.78a.839.839,0,0,0,.014,1.206L10.948,6.27H.844A.842.842,0,0,0,0,7.114V8.239a.842.842,0,0,0,.844.844h10.1L6.711,13.119A.845.845,0,0,0,6.7,14.324l.78.78A.84.84,0,0,0,8.669,15.1Z' fill='%230e1214'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: math.percentage(math.div(16, strip-unit($icon-size-sp))) auto;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    box-shadow: 12px 0 16px rgba(0 0 0 / 8%);
+    transform: rotate(90deg);
+    @include transitions(background-color, 0.3s ease-out);
+
+    @include pc {
+      bottom: calc(#{-$icon-size} / 2);
+      left: calc(50% - ($icon-size / 2));
+      width: $icon-size;
+      height: $icon-size;
+      background-size: math.percentage(math.div(16, strip-unit($icon-size))) auto;
+    }
+
+    @include tablet {
+      bottom: calc(#{convert-vw(-$icon-size)} / 2);
+      left: calc(50% - (convert-vw($icon-size) / 2));
+      width: convert-vw($icon-size);
+      height: convert-vw($icon-size);
+      box-shadow: convert-vw(12) 0 convert-vw(16) rgba(0 0 0 / 8%);
+    }
+
+    &:hover {
+      @include only-pc {
+        background-color: get-color('text', 'highlight');
+      }
+    }
+  }
+
+  &--opened {
+    padding-bottom: 40px;
+
+    @include tablet {
+      padding-bottom: convert-vw(40);
+    }
+
+    #{$root}__button {
+      box-shadow: -12px 0 16px rgba(0 0 0 / 8%);
+      transform: rotate(-90deg);
+
+      @include tablet {
+        box-shadow: convert-vw(-12) 0 convert-vw(16) rgba(0 0 0 / 8%);
+      }
+    }
+    #{$root}__hidden-text {
+      display: block;
+    }
+  }
+}

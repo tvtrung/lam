@@ -1,0 +1,80 @@
+{
+  "posts": "bài viết",
+  "pre-post":"Bài trước",
+  "next-post": "Bài sau",
+  "category": "Danh mục",
+  "display-order": "Hiển thị theo",
+  "view-detail": "Xem thêm",
+  "see-more": "Xem thêm",
+  "show-less": "Thu gọn",
+  "about": "GIỚI THIỆU",
+  "service": "DỊCH VỤ",
+  "news": "BLOG",
+  "job": "TUYỂN DỤNG",
+  "recruit": "ỨNG TUYỂN",
+  "address": "Lầu 12, An Phú Plaza, số 117-119 Lý Chính Thắng, Phường Võ Thị Sáu, Quận 3, TP. Hồ Chí Minh",
+  "form": {
+    "title": {
+      "01": "TRỞ THÀNH",
+      "02": "THÀNH VIÊN CỦA LAMPART"
+    },
+    "intro": "Bạn có muốn cùng làm việc với chúng tôi tại Lampart - nơi mỗi một cá nhân đều có thể học hỏi và trưởng thành hay không? <br /> Hãy nhanh chóng ứng tuyển và gửi CV về cho chúng tôi bằng cách <strong>nhấn nút Ứng tuyển</strong> phía dưới nhé <br> Chúng tôi hi vọng được cùng làm việc với bạn trong thời gian sắp tới.",
+    "input": {
+      "name": "Tên của bạn",
+      "phone": "Số điện thoại của bạn",
+      "email": "Email của bạn",
+      "position": {
+        "label": "Vị trí ứng tuyển của bạn",
+        "placeholder": "Vui lòng chọn vị trí",
+        "input-placeholder": "Consultant Manager",
+        "data": {
+          "other": "Vị trí ứng tuyển khác"
+        }
+      },
+      "level": {
+        "label": "Cấp bậc ứng tuyển",
+        "placeholder":  "Vui lòng chọn cấp bậc"
+      },
+      "file": "CV/Hồ sơ",
+      "other-file": "Hồ sơ khác (nếu có)",
+      "file-size-note": "(*.doc, *.docx, *.pdf - Nhỏ hơn 5MB)",
+      "input-file-placeholder": "Chọn tệp",
+      "note-placeholder": "Ghi chú"
+    },
+    "annotation": {
+      "label": "Bảo mật thông tin",
+      "note": "Thông tin cá nhân mà bạn cung cấp sẽ được bảo mật và chỉ được sử dụng cho mục đích liên lạc tuyển dụng như gửi tài liệu, e-mail và trao đổi bằng điện thoại và không sử dụng cho mục đích cá nhân khác."
+    },
+    "term": "Tôi đồng ý với các điều khoản về sử dụng thông tin cá nhân.",
+    "submit-button": "GỬI",
+    "contact": {
+      "text01": "Bạn có thể ứng tuyển qua ",
+      "link": "Link",
+      "text02": " sau. Hoặc gửi thông tin đến email ",
+      "email": "recruit@lampart-vn.com",
+      "text03": ""
+    },
+    "error-message": {
+      "name": "Xin hãy nhập tên của bạn.",
+      "phone": "Xin hãy nhập số điện thoại của bạn.",
+      "email": "Xin hãy nhập email của bạn.",
+      "position": "Xin hãy chọn vị trí ứng tuyển của bạn.",
+      "level":"Xin hãy chọn cấp bậc ứng tuyển của bạn.",
+      "file": "Xin hãy đính kèm CV/Hồ sơ của bạn.",
+      "file-size": "Xin hãy đính kèm CV/Hồ sơ <5MB",
+      "file-type": "Xin hãy đính kèm CV/Hồ sơ *.doc, *.docx, *.pdf",
+      "term": "Vui lòng đồng ý với điều khoản sử dụng thông tin cá nhân."
+    },
+    "thanks": {
+      "title": "CẢM ƠN BẠN!",
+      "content": {
+        "01": "Đơn ứng tuyển của bạn đã được gửi thành công.",
+        "02": "Cảm ơn bạn đã gửi đơn. Chúng tôi sẽ liên hệ lại với bạn trong thời gian sớm nhất.",
+        "03": "Hi vọng sẽ trở thành đồng đội của bạn trong tương lai."
+      }
+    }
+  },
+  "text_change_language": "JP Corporate Site",
+  "confirm_title": "Moves to the corporate website in Japanese",
+  "confirm_subtitle": "The Japanese-language corporate website displays content for Japanese companies. Are you sure?"
+}

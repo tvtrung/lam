@@ -1,0 +1,94 @@
+.a-title {
+  $root: &;
+
+  font-weight: $font-weight-bold;
+  color: get-color('text', 'primary');
+  @include u-fz(24, 32);
+
+  @include pc {
+    @include u-fz(44, 56, false, true);
+  }
+
+  &:not(.a-title--underline) {
+    & > span {
+      display: inline-block;
+    }
+  }
+
+  &--inverse {
+    color: get-color('white');
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--highlight {
+    position: relative;
+    color: get-color('green');
+    @include pc {
+      @include u-fz(36, 54, false, true);
+
+      padding-left: 35px;
+
+      &:before {
+        top: 10px;
+      }
+      @include font-other(ja) {
+        &:before {
+          top: 13px;
+        }
+      }
+    }
+
+    @include sp {
+      padding-left: 15px;
+    }
+
+    &:before {
+      position: absolute;
+      top: 2px;
+      left: 0;
+      width: 4px;
+      height: 49px;
+      content: '';
+      background-color: get-color('green');
+      @include pc {
+        top: 9px;
+        height: 35px;
+      }
+    }
+  }
+
+  &--green {
+    color: get-color('green');
+    @include u-fz(32, 26);
+  }
+
+  &--underline {
+    position: relative;
+    padding-bottom: 13px;
+    @include u-fz(24, 32);
+
+    @include tablet {
+      padding-bottom: convert-vw(13);
+    }
+
+    &:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 68px;
+      height: 3px;
+      content: '';
+      background-color: get-color('primary');
+    }
+
+    &#{$root}--green {
+      &:after {
+        height: 4px;
+        background-color: get-color('green');
+      }
+    }
+  }
+}

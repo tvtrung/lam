@@ -1,0 +1,222 @@
+/* stylelint-disable value-no-vendor-prefix */
+.m-card {
+  $root: &;
+
+  position: relative;
+  @include transitions(all, 0.5s $transition-cubic);
+
+  &:hover {
+    @include only-pc {
+      box-shadow: 0 15px 35px rgb(0 0 0 / 5%);
+
+      #{$root}__image {
+        img {
+          transform: scale(1.03);
+        }
+      }
+
+      #{$root}__title {
+        color: get-color('green');
+      }
+    }
+  }
+
+  &__image {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
+    -webkit-mask-image: radial-gradient(get-color('white'), get-color('black'));
+
+    .a-image {
+      @include aspect-ratio(360, 400);
+
+      img {
+        @include transitions(transform, 0.5s $transition-cubic);
+      }
+    }
+  }
+
+  &__body {
+    padding: 24px 22px;
+    background: get-color('white');
+    border: 1px solid get-color('border', 'primary');
+    border-radius: 0 0 8px 8px;
+
+    @include pc {
+      padding: 24px 24px 26px;
+    }
+
+    @include tablet {
+      padding: convert-vw(24) convert-vw(24) convert-vw(26);
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    @include u-fz(14, 14);
+
+    @include pc {
+      @include u-fz(14, 20, false, true);
+    }
+  }
+
+  &__title {
+    margin-top: 14px;
+    font-weight: $font-weight-bold;
+    color: get-color('text', 'primary');
+    @include u-fz(20, 32);
+    @include transitions(color, 0.3s $transition-cubic);
+    // @include font-other(vi) {
+    //   font-family: $font-family-saira;
+    // }
+    font-family: $font-family-saira;
+
+
+
+    @include pc {
+      margin-top: 16px;
+      @include u-fz(24, 36, false, true);
+    }
+    @include tablet {
+      margin-top: convert-vw(16);
+    }
+
+    #{$root}--blog & {
+      display: -webkit-box;
+      height: 80px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      @include tablet {
+        height: convert-vw(80);
+      }
+    }
+  }
+
+  &__date {
+    margin-right: 18px;
+    font-family: $font-family-encode-sans;
+    font-weight: $font-weight-semi-bold;
+    color: get-color('text', 'gray');
+
+    @include pc {
+      margin-right: 15px;
+      min-width: 80px;
+    }
+
+    @include tablet {
+      margin-right: convert-vw(15);
+    }
+  }
+
+  &__category {
+    font-family: $font-family-encode-sans;
+    font-weight: $font-weight-bold;
+    color: get-color('green');
+    @include pc {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 120px;
+    }
+  }
+
+  &__new-indicator {
+    position: absolute;
+    top: -4px;
+    right: -3px;
+    z-index: get-zindex('foreground');
+    display: block;
+    width: 64px;
+    height: 64px;
+    background: url('~images/new-indicator.svg') no-repeat center center/cover;
+    @include tablet {
+      top: convert-vw(-4);
+      right: convert-vw(-3);
+      width: convert-vw(64);
+      height: convert-vw(64);
+    }
+  }
+
+  &__viewcount {
+    position: absolute;
+    bottom: 24px;
+    left: 22px;
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    font-family: $font-family-encode-sans;
+    color: get-color('pink');
+    @include u-fz(14, 20, false, true);
+
+    @include pc {
+      bottom: 16px;
+      left: 16px;
+    }
+
+    @include tablet {
+      bottom: convert-vw(16);
+      left: convert-vw(16);
+      margin-top: convert-vw(12);
+    }
+
+    &:before {
+      width: 24px;
+      height: 24px;
+      margin-right: 2px;
+      content: '';
+      background: url('/images/icon-heart-small.svg') no-repeat center center/cover;
+    }
+  }
+
+  &--blog {
+    box-shadow: 0 15px 35px rgba(get-color('black'), 5%);
+    #{$root}__image {
+      border-radius: 7px 7px 0 0;
+
+      .a-image {
+        @include aspect-ratio(268, 222);
+        @include sp {
+          @include aspect-ratio(326, 222);
+        }
+      }
+    }
+    #{$root}__viewcount {
+      @include sp {
+        bottom: 16px;
+      }
+    }
+
+    #{$root}__info {
+      @include u-fz(14, 20, false, true);
+    }
+
+    #{$root}__body {
+      padding: 16px 24px 48px;
+      border-radius: 0 0 7px 7px;
+
+      @include pc {
+        padding: 18px 32px 53px 16px;
+
+        @include font-other(ja) {
+          padding-right: 24px;
+        }
+      }
+
+      @include tablet {
+        padding: convert-vw(18) convert-vw(32) convert-vw(53) convert-vw(16);
+      }
+    }
+
+    #{$root}__title {
+      margin-top: 12px;
+      @include u-fz(18, 27, false, true);
+
+      @include tablet {
+        margin-top: convert-vw(12);
+      }
+    }
+  }
+}

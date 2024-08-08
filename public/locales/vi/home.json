@@ -1,0 +1,89 @@
+{
+  "top-hero": {
+    "tagline01": "Đưa Châu Á trở thành trung tâm công nghệ thế giới.",
+    "tagline02": "Mang chất lượng Nhật Bản được quốc tế ca ngợi đến Việt Nam.",
+    "tagline03": "Và cùng với Việt Nam mang các dịch vụ ra toàn thế giới.",
+    "button": "VỊ TRÍ ĐANG TUYỂN"
+  },
+  "promise": {
+    "big-title": "BẠN CÓ THỂ ĐẠT ĐƯỢC Ở LAMPART",
+    "title01": {
+      "line01": "Kỹ năng nền tảng  (kỹ năng",
+      "line02": "chuyên môn & kỹ năng mềm)"
+    },
+    "title02": {
+      "line01": "Năng lực phán đoán &",
+      "line02": "khả năng thích ứng"
+    },
+    "title03": {
+      "line01": "Giao tiếp",
+      "line02": "(Báo Cáo - Liên Lạc- Thảo Luận)"
+    }
+  },
+  "develop": {
+    "big-title": "PHÁT TRIỂN BẢN THÂN TẠI LAMPART",
+    "block01": {
+      "title": "KỸ NĂNG MỀM",
+      "content": "Tại Lampart, nhân viên không chỉ có môi trường thực tế để ứng dụng kỹ thuật tiên tiến nhất, mà còn được chú trọng nâng cao tầm nhận thức, phát triển kỹ năng mềm và tích lũy kinh nghiệm làm việc."
+    },
+    "block02": {
+      "title": {
+        "01": "ĐÀO TẠO CHUYÊN SÂU ",
+        "02": "DÀNH CHO THỰC TẬP SINH"
+      },
+      "content": "Giáo án đào tạo chuyên sâu với trọng tâm là kỹ thuật sử dụng trong dự án thực tế tại Lampart được soạn thảo từ các Giảng viên đang trực tiếp giảng dạy tại các trường Đại học tại TP. HCM.\nGiáo án được áp dụng riêng cho từng nhân viên giúp cho các bạn Thực Tập Sinh có cơ hội học tập song song với thực hành, tạo môi trường thuận lợi cho kiến thức được áp dụng thăng hoa vào thực tiễn một cách hoàn hảo."
+    },
+    "block03": {
+      "title": {
+        "01": "PHÁT TRIỂN KỸ NĂNG CỦA ",
+        "02": "BẢN THÂN THÔNG QUA DỰ ÁN THỰC TẾ"
+      },
+      "content": "Bạn sẽ càng ngày trở nên hoàn thiện bản thân hơn khi thông qua các Dự án thực tế tại Lampart. Ngoài kỹ thuật được học hỏi thông qua các Dự án khi làm việc trực tiếp với các kỹ sư (System Engineer) của công ty mẹ, bạn còn được tích lũy thêm kinh nghiệm đối ứng và xử lý vấn đề thông qua công việc khi làm việc với khách hàng tại Nhật."
+    }
+  },
+  "ceo-message": {
+    "title": "THÔNG ĐIỆP TỪ CEO",
+    "content": "Sứ mệnh của chúng tôi là trở thành một doanh nghiệp tạo dựng được niềm tin và sự kì vọng từ khách hàng bằng việc cống hiến hết mình cho công việc kinh doanh và phát triển của Quý khách hàng.\n \nTuy nhiên, để thực hiện và duy trì được điều này không phải là một công việc dễ dàng mà nó đòi hỏi rất nhiều từ sự học hỏi và hoàn thiện của từng thành viên trong công ty.",
+    "name": "KAZUYASU KAWAHARA"
+  },
+  "service": {
+    "title": "DỊCH VỤ",
+    "content": "Lampart đang cung cấp các dịch vụ Tư vấn và lập kế hoạch xây dựng nội dung phát triển phần mềm hệ thống; Phát triển và bảo trì phần mềm; Thiết kế và xây dựng Website cho các quý khách hàng Doanh nghiệp tại Nhật Bản. Đồng thời, chúng tôi cung cấp dịch vụ thành lập công ty và tuyển dụng nguồn Nhân lực cho các đối tác Nhật Bản có nhu cầu thành lập công ty tại Việt Nam."
+  },
+  "recruit": {
+    "title": "VỊ TRÍ ĐANG TUYỂN"
+  },
+  "benefit": {
+    "title": "LỢI ÍCH KHI LÀM VIỆC TẠI LAMPART",
+    "block01": {
+      "title": "Thưởng thành tích",
+      "content": "Thưởng thành tích 2 lần/năm.\nChúng tôi trao những phần thưởng hiệu suất thể hiện qua các dự án xuất sắc cũng như hiệu quả công việc trong suốt thời gian cống hiến của từng nhân viên. Chúng tôi luôn khuyến khích nhân viên thực hiện công việc có chất lượng, đạt mục tiêu đề ra và duy trì động lực cũng như năng suất."
+    },
+    "block02": {
+      "title": "Đánh giá lương",
+      "content": "Đánh giá xét tăng lương ít nhất 1 lần/năm. Chúng tôi tạo ra cơ hội trao đến nhân viên mức lương xứng đáng và phù hợp với hiệu quả công việc mà nhân viên thể hiện trong suốt một năm tận tâm vì công việc."
+    },
+    "block03": {
+      "title": "Bữa trưa chào mừng nhân viên mới",
+      "content": "Chúng tôi mong muốn mang đến cho nhân viên mới sự thoải mái trong ngày làm việc đầu tiên và cơ hội kết nối với lãnh đạo và đồng nghiệp nhanh chóng và hợp tác tốt hơn trong tương lai."
+    },
+    "block04": {
+      "title": "Bảo hiểm tai nạn lao động",
+      "content": "Gói Bảo hiểm tai nạn lao động mà chúng tôi sử dụng sẽ góp phần hỗ trợ nhân viên không những về mặt vật chất bằng cách bồi thường kịp thời những tổn hại do rủi ro trong quá trình làm việc mà còn đem lại giá trị tinh thần để nhân viên có thể yên tâm làm việc tốt hơn."
+    },
+    "block05": {
+      "title": "Event trong năm",
+      "content": "Là công ty phần mềm với môi trường trẻ và năng động, chúng tôi không quên chăm lo đời sống tinh thần cho nhân viên sau mỗi ngày làm việc căng thẳng.\nNgoài các event trong năm: Halloween, Giáng Sinh, Tất Niên, Sinh Nhật hàng tháng, .... và các hoạt động ngoài trời: 3 - 4 lần/năm của toàn công ty, thì mỗi tháng các team nhân sự còn được công ty hỗ trợ chi phí Team Building cho các hoạt động gắn kết trong nội bộ team."
+    },
+    "block06": {
+      "title": "Các phúc lợi khác",
+      "content": "Với mục đích chăm lo sức khỏe và đảm bảo môi trường cũng như tinh thần làm việc, Lampart còn nhiều phúc lợi khác, điển hình như các phúc lợi sau:\n- Woman day: 0.5 ngày nghỉ trong tháng cho các bạn nữ\n- Đám cưới nhân viên: 5,000,000VND/nhân viên\n- Nhân viên làm việc lâu năm: 10,000,000VND/nhân viên\n- Nhân viên là F0: nhận 100% lương trong thời gian điều trị\n- Hỗ trợ chi phí Internet, điện trong thời gian làm việc tại nhà"
+    }
+  },
+  "blog": {
+    "blog01": "Kỷ niệm 9 năm thành lập công ty (26/11/2012 - 26/11/2021)",
+    "blog02": "Cùng Lampart nhìn lại năm 2021",
+    "blog03": "Happy International Men’s day (19/11)",
+    "blog04": "Serminar công nghệ và sự đổi mới trong năm 2022"
+  }
+}

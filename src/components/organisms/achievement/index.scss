@@ -1,0 +1,44 @@
+.o-achievement {
+  padding: 88px 0 48px;
+
+  @include pc {
+    padding: 50px 0 57px;
+  }
+  @include tablet {
+    padding: convert-vw(50) 0 convert-vw(57);
+  }
+
+  &__title {
+    word-break: keep-all;
+    white-space: pre-wrap;
+    margin-bottom: 46px;
+    text-transform: uppercase;
+    @include font-other(vi) {
+      font-family: $font-family-saira;
+    }
+  }
+
+  &__list-card {
+    @include pc {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+
+    @include tablet {
+      gap: convert-vw(32);
+    }
+  }
+
+  &__list-item {
+    &:first-of-type {
+      @include sp {
+        margin-top: 0;
+      }
+    }
+
+    @include sp {
+      margin-top: 42px;
+    }
+  }
+}

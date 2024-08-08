@@ -1,0 +1,104 @@
+.p-job {
+  position: relative;
+  font-family: Encode Sans,sans-serif;
+  .o-job-hero {
+    z-index: get-zindex('background');
+    width: 100%;
+  }
+
+  &__body {
+    
+    margin-top: calc(534px - 834px);
+
+    @include pc {
+      margin-top: calc(461px - 820px - 66px);
+    }
+    @include tablet {
+      margin-top: convert-vw(calc(461px - 820px - 66px));
+    }
+
+    & > .o-job-list {
+      @include pc {
+        margin-bottom: 28px;
+      }
+      @include tablet {
+        margin-bottom: convert-vw(28px);
+      }
+
+      .o-container {
+        @include pc {
+          padding: 0 27px 0 73px;
+        }
+        @include tablet {
+          padding: 0 convert-vw(27) 0 convert-vw(73);
+        }
+      }
+    }
+
+    .o-story {
+      margin-bottom: 32px;
+      @include pc {
+        margin-bottom: 47px;
+      }
+      @include tablet {
+        margin-bottom: convert-vw(47px);
+      }
+      @include sp {
+        margin-right: -25px;
+      }
+    }
+
+    .o-career {
+      @include pc {
+        position: relative;
+        left: 50%;
+        width: 100vw;
+        transform: translateX(-50%);
+      }
+      @include sp {
+        margin: 0 -24px;
+      }
+    }
+
+    .o-job-detail {
+      margin: 48px 0 70px;
+      @include pc {
+        position: relative;
+        left: 50%;
+        width: 100vw;
+        max-width: 1360px;
+        margin: 47px auto 117px;
+        transform: translateX(-50%);
+      }
+      @include tablet {
+        margin: convert-vw(47px) auto convert-vw(117px);
+      }
+
+      a {
+        font-size: 18px;
+        line-height: 1.1666666667;
+        display: -moz-inline-box;
+        display: inline-flex;
+        -moz-box-align: center;
+        align-items: center;
+        font-weight: 700;
+        color: #8eb84a;
+        cursor: pointer;
+        background: none;
+        border: none;
+        outline: none;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__job-title {
+    font-family: $font-family-saira;
+    @include pc {
+      margin-bottom: 47px;
+    }
+    @include tablet {
+      margin-bottom: convert-vw(47px);
+    }
+  }
+}

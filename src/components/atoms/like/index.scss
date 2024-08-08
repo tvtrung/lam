@@ -1,0 +1,215 @@
+.a-like {
+  $root: &;
+
+  position: relative;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  background: get-color('white');
+  border: 1px solid get-color('border', 'primary');
+  border-radius: 7px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 5%);
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 48px;
+    overflow: visible;
+    cursor: pointer;
+    transform: translateY(-50%) translateX(-50%);
+  }
+
+  &--active {
+    #{$root}__icon {
+      fill: get-color('pink');
+      transform: scale(0.2);
+      transform-origin: center;
+      animation: animate-heart 0.3s linear forwards 0.25s;
+    }
+
+    #{$root}__circle {
+      opacity: 100%;
+      transition: all 2s;
+      animation: animate-circle 0.3s linear forwards;
+    }
+
+    #{$root}__dots {
+      opacity: 100%;
+      transition: 0.1s all 0.3s;
+
+      circle {
+        transform-origin: 0 0 0;
+
+        &:nth-child(1) {
+          transition: 0.5s transform 0.3s;
+        }
+
+        &:nth-child(2) {
+          transition: 1.5s transform 0.3s;
+        }
+      }
+
+      &:nth-of-type(1) {
+        circle:nth-child(1) {
+          transform: scale(0) translate(0, -30px);
+        }
+
+        circle:nth-child(2) {
+          transform: scale(0) translate(10px, -50px);
+        }
+      }
+
+      &:nth-of-type(2) {
+        circle:nth-child(1) {
+          transform: scale(0) translate(30px, -15px);
+        }
+
+        circle:nth-child(2) {
+          transform: scale(0) translate(60px, -15px);
+        }
+      }
+
+      &:nth-of-type(3) {
+        circle:nth-child(1) {
+          transform: scale(0) translate(30px, 0);
+        }
+
+        circle:nth-child(2) {
+          transform: scale(0) translate(60px, 10px);
+        }
+      }
+
+      &:nth-of-type(4) {
+        circle:nth-child(1) {
+          transform: scale(0) translate(30px, 15px);
+        }
+
+        circle:nth-child(2) {
+          transform: scale(0) translate(40px, 50px);
+        }
+      }
+
+      &:nth-of-type(5) {
+        circle:nth-child(1) {
+          transform: scale(0) translate(-10px, 20px);
+        }
+
+        circle:nth-child(2) {
+          transform: scale(0) translate(-60px, 30px);
+        }
+      }
+
+      &:nth-of-type(6) {
+        circle:nth-child(1) {
+          transform: scale(0) translate(-30px, 0);
+        }
+
+        circle:nth-child(2) {
+          transform: scale(0) translate(-60px, -5px);
+        }
+      }
+
+      &:nth-of-type(7) {
+        circle:nth-child(1) {
+          transform: scale(0) translate(-30px, -15px);
+        }
+
+        circle:nth-child(2) {
+          transform: scale(0) translate(-55px, -30px);
+        }
+      }
+    }
+  }
+
+  &__icon {
+    fill: none;
+    stroke: get-color('pink');
+    stroke-linecap: round;
+    stroke-width: 2px;
+    transform: translateX(6px);
+    transform-origin: center;
+    animation: animate-heart-out 0.3s linear forwards;
+  }
+
+  &__circle {
+    opacity: 0%;
+    transform-origin: 29.5px 29.5px;
+  }
+}
+
+@keyframes animate-circle {
+  40% {
+    opacity: 100%;
+    fill: #dd4688;
+    transform: scale(10);
+  }
+
+  55% {
+    opacity: 100%;
+    fill: #d46abf;
+    transform: scale(11);
+  }
+
+  65% {
+    opacity: 100%;
+    fill: #cc8ef5;
+    transform: scale(12);
+  }
+
+  75% {
+    opacity: 100%;
+    fill: transparent;
+    stroke: #cc8ef5;
+    stroke-width: 0.5;
+    transform: scale(13);
+  }
+
+  85% {
+    opacity: 100%;
+    fill: transparent;
+    stroke: #cc8ef5;
+    stroke-width: 0.2;
+    transform: scale(17);
+  }
+
+  95% {
+    opacity: 100%;
+    fill: transparent;
+    stroke: #cc8ef5;
+    stroke-width: 0.1;
+    transform: scale(18);
+  }
+
+  100% {
+    opacity: 100%;
+    fill: transparent;
+    stroke: #cc8ef5;
+    stroke-width: 0;
+    transform: scale(19);
+  }
+}
+
+@keyframes animate-heart {
+  0% {
+    transform: translateX(6px) scale(0.2);
+  }
+
+  40% {
+    transform: translateX(6px) scale(1.2);
+  }
+
+  100% {
+    transform: translateX(6px) scale(1);
+  }
+}
+
+@keyframes animate-heart-out {
+  0% {
+    transform: translateX(6px) scale(1.4);
+  }
+
+  100% {
+    transform: translateX(6px) scale(1);
+  }
+}

@@ -1,0 +1,42 @@
+@use 'sass:map';
+@use 'sass:math';
+
+// Zindex Function
+@function get-zindex($value) {
+  @return map.get($zindex, $value);
+}
+
+// Get color function
+@function get-color($color, $variation: false) {
+  @if map-has-key($colors, $color) {
+    $color: map.get($colors, $color);
+  } @else {
+    @if type-of($color) != color {
+      @error 'Invalid color name: `#{$color}`.';
+    }
+  }
+
+  @if $variation {
+    @if not map-has-key($color, $variation) {
+      @error 'Invalid $variation: `#{$variation}`.';
+    } @else {
+      @return map.get($color, $variation);
+    }
+  }
+
+  @return $color;
+}
+
+// Remove the unit of a value
+@function strip-unit($value) {
+  @if type-of($value) == 'number' and not unitless($value) {
+    @return math.div($value, ($value * 0 + 1));
+  }
+
+  @return $value;
+}
+
+// Convert pxToVw
+@function convert-vw($px-value) {
+  @return #{math.div(strip-unit($px-value), strip-unit($width-pc)) * 100}vw;
+}

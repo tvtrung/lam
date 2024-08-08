@@ -1,0 +1,353 @@
+.o-job-detail {
+  $root: &;
+
+  font-family: $font-family-encode-sans;
+  @include pc {
+    padding: 0 24px;
+  }
+
+  &__container {
+    padding: 36px 32px 33px;
+    border: 1px solid get-color('border', 'primary');
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 5%);
+
+    @include pc {
+      max-width: 1312px;
+      padding: 63px 88px 88px;
+    }
+    @include tablet {
+      padding: convert-vw(63) convert-vw(88) convert-vw(88);
+      box-shadow: 0 convert-vw(15) convert-vw(35) rgba(0, 0, 0, 5%);
+    }
+  }
+
+  &__job-title {
+    margin-bottom: 36px;
+    font-family: $font-family-saira;
+    @include pc {
+      margin-bottom: 30px;
+    }
+
+    @include tablet {
+      margin-bottom: convert-vw(30);
+    }
+  }
+
+  &__tabs {
+    margin-bottom: 49px;
+
+    .o-job-detail__tab-content-list {
+      .o-job-detail__tab-content {
+        a {
+          font-size: 18px;
+          line-height: 1.1666666667;
+          display: -moz-inline-box;
+          display: inline-flex;
+          -moz-box-align: center;
+          align-items: center;
+          font-weight: 700;
+          color: #8eb84a;
+          cursor: pointer;
+          background: none;
+          border: none;
+          outline: none;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    @include pc {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 53px;
+    }
+
+    @include tablet {
+      margin-bottom: convert-vw(53);
+    }
+  }
+
+  &__tab-title {
+    font-weight: bold;
+  }
+
+  &__tab-item {
+    font-family: $font-family-saira;
+    cursor: pointer;
+    border-top: 2px solid get-color('border', 'primary');
+    @include u-fz(20, 32);
+
+    @include pc {
+      position: relative;
+      padding-right: 80px;
+      @include u-fz(24, 32);
+    }
+
+    @include sp {
+      scroll-margin-top: 81px;
+    }
+
+    @include tablet {
+      padding-right: convert-vw(80);
+      @include u-fz(24, 32, false, true);
+    }
+
+    &:before {
+      display: block;
+      width: calc(140px / 262px * 100%);
+      height: 2px;
+      margin-top: -2px;
+      content: '';
+      background-color: get-color('woodsmoke');
+      transition: 0.3s all ease;
+
+      @include pc {
+        width: 233px;
+      }
+
+      @include tablet {
+        width: convert-vw(233);
+      }
+    }
+
+    &:last-child:after {
+      display: block;
+      width: calc(140px / 262px * 100%);
+      height: 2px;
+      margin-bottom: -2px;
+      content: '';
+      background-color: get-color('woodsmoke');
+
+      @include pc {
+        width: 233px;
+      }
+
+      @include tablet {
+        width: convert-vw(233);
+      }
+    }
+
+    & > #{$root}__tab-title {
+      padding: 30px 0;
+      margin: 2px 0;
+      @include pc {
+        width: 233px;
+        padding: 33px 0;
+        transition: 0.3s all ease;
+      }
+
+      @include tablet {
+        width: convert-vw(233);
+        padding: convert-vw(33) 0;
+      }
+    }
+
+    &:last-child {
+      border-bottom: 2px solid get-color('border', 'primary');
+    }
+
+    &:hover {
+      @include only-pc {
+        &:before {
+          background-color: get-color('green');
+        }
+        #{$root}__tab-title {
+          color: get-color('green');
+
+          @include sp {
+            background-color: get-color('pastel-green');
+          }
+
+          &:before {
+            @include pc {
+              position: absolute;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              z-index: get-zindex('background');
+              display: block;
+              content: '';
+            }
+          }
+        }
+
+        & + #{$root}__tab-item:before {
+          background-color: get-color('green');
+        }
+
+        &:last-child:after {
+          background-color: get-color('green');
+        }
+      }
+    }
+
+    &--active {
+      &:before {
+        background-color: get-color('green');
+      }
+
+      & + #{$root}__tab-item:before {
+        background-color: get-color('green');
+      }
+
+      &:last-child:after {
+        background-color: get-color('green');
+      }
+
+      #{$root}__tab-title {
+        color: get-color('green');
+
+        @include sp {
+          padding: 16px 0;
+          margin: 26px 0 16px;
+          background-color: get-color('pastel-green');
+        }
+
+        &:before {
+          background-color: get-color('pastel-green');
+          @include pc {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: get-zindex('background');
+            display: block;
+            content: '';
+          }
+        }
+      }
+    }
+  }
+
+  &__tab-content {
+    display: none;
+
+    &--active {
+      display: block;
+      white-space: pre-line;
+      @include u-fz(18, 27);
+
+      @include pc {
+        margin-top: -2px;
+        margin-left: 80px;
+      }
+
+      @include tablet {
+        margin-top: convert-vw(-2);
+        margin-left: convert-vw(80);
+        @include u-fz(18, 27, false, true);
+      }
+
+      @include sp {
+        padding-bottom: 29px;
+      }
+    }
+  }
+
+  &__work-model-list {
+    display: flex;
+    margin-bottom: 32px;
+    @include pc {
+      margin-bottom: 42px;
+    }
+    @include tablet {
+      margin-bottom: convert-vw(42);
+    }
+  }
+
+  &__work-model {
+    padding: 0 16px;
+    border-right: 2px solid get-color('border', 'primary');
+    @include u-fz(18, 27);
+
+    @include pc {
+      padding: 0 24px;
+      @include u-fz(20, 27);
+    }
+
+    @include tablet {
+      @include u-fz(20, 27, false, true);
+
+      padding: 0 convert-vw(24);
+    }
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+      border-right: 0;
+    }
+  }
+
+  &__highlight {
+    font-family: $font-family-saira;
+
+    @include pc {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__hiring {
+    @include u-fz(24, 32);
+
+    @include pc {
+      flex: 0 0 314px;
+      margin-right: 80px;
+    }
+
+    @include tablet {
+      flex: 0 0 convert-vw(314);
+      margin-right: convert-vw(80);
+      @include u-fz(24, 32, false, true);
+    }
+
+    @include sp {
+      margin-bottom: 28px;
+    }
+  }
+
+  &__hiring-button {
+    @include font-other(vi) {
+      font-family: $font-family-saira;
+    }
+
+    display: flex;
+    flex: 0 0 173px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    color: get-color('white');
+    background-color: get-color('button', 'black');
+    @include transitions(background-color, 0.3s $transition-cubic);
+
+    @include tablet {
+      @include u-fz(16, 24, false, true);
+    }
+
+    @include sp {
+      width: 100%;
+    }
+
+    &:hover {
+      @include only-pc {
+        background-color: get-color('green');
+      }
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
+
+    &--disabled {
+      color: get-color('button', 'gray');
+      pointer-events: none;
+      background: rgba(get-color('button', 'gray'), 0.2);
+    }
+  }
+}

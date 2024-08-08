@@ -1,0 +1,211 @@
+.o-top-hero {
+  $button-start: 1.75;
+  $button-duration: 1.75;
+  $hex-duration: 2.5;
+  $hex-start: 2.3;
+  $icon-start: 3.25;
+
+  position: relative;
+  overflow: hidden;
+
+  @include only-pc {
+    height: 100vh;
+  }
+
+  &__icons {
+    @include both-sp-and-tablet {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      @include aspect-ratio(375, 482);
+    }
+  }
+
+  svg {
+    position: absolute;
+    @include both-sp-and-tablet {
+      top: 0;
+      right: 0;
+      width: auto;
+      height: 100%;
+    }
+    @include only-pc {
+      top: 50%;
+      left: 50%;
+      width: auto;
+      min-width: 100%;
+      height: auto;
+      min-height: 100%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+
+    @media (max-width: 1366px) {
+      height: 100%;
+    }
+  }
+
+  mask {
+    mask-type: alpha;
+  }
+
+  &__icon {
+    $icon: &;
+
+    opacity: 0%;
+    @for $i from 1 through 7 {
+      &:nth-of-type(#{$i}n) {
+        animation: fade-in 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+        animation-delay: #{$icon-start - 1 + $i}s;
+
+        #{$icon}--path {
+          @for $j from 1 through 10 {
+            &:nth-of-type(#{$j}n) {
+              animation: dash 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+              animation-delay: #{$icon-start - 1 + $i + $j * 0.1}s;
+            }
+          }
+        }
+      }
+    }
+
+    &--text {
+      fill: #ffffff;
+    }
+
+    &--line {
+      fill: none;
+      stroke: #ffffff;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 2px;
+    }
+
+    &--path {
+      @for $i from 1 through 10 {
+        &:nth-child(#{$i}n) {
+          animation: dash 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+          animation-delay: #{3 + $i * 0.25}s;
+        }
+      }
+    }
+  }
+
+  &__image {
+    @include only-pc {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: get-zindex('neutral');
+    }
+
+    @include both-sp-and-tablet {
+      position: relative;
+      @include aspect-ratio(375, 482);
+    }
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: get-zindex('foreground');
+      width: 100%;
+      height: 100%;
+      content: '';
+      background-image: url('/images/kv/kv-line.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      opacity: 0%;
+      animation: fade-in #{$hex-duration}s cubic-bezier(0.25, 1, 0.5, 1) #{$hex-start}s forwards;
+
+      @include both-sp-and-tablet {
+        background-position: center right;
+      }
+    }
+
+    .a-image {
+      @include only-pc {
+        height: 100%;
+      }
+
+      @include both-sp-and-tablet {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+
+      img {
+        @include only-pc {
+          object-position: center;
+        }
+
+        @include both-sp-and-tablet {
+          object-position: right;
+        }
+      }
+    }
+  }
+
+  &__main {
+    @include only-pc {
+      position: relative;
+      z-index: get-zindex('foreground');
+      padding-top: 249px;
+    }
+
+    @include both-sp-and-tablet {
+      padding-top: 31px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 26px;
+    font-family: $font-family-saira;
+    @include only-pc {
+      margin-bottom: 20px;
+    }
+
+    @include sp {
+      @include u-fz(36, 48);
+
+      max-width: 280px;
+    }
+  }
+
+  &__content {
+    white-space: break-spaces;
+    margin-bottom: 30px;
+    text-align: justify;
+    @include only-pc {
+      margin-bottom: 44px;
+    }
+  }
+
+  &__action {
+    min-height: 51px;
+    padding-right: 20px;
+    padding-left: 20px;
+    opacity: 0%;
+    animation: fade-in #{$button-duration}s cubic-bezier(0.25, 1, 0.5, 1) #{$button-start}s forwards;
+    @include transitions(background-color, 0.35s cubic-bezier(0.25, 1, 0.5, 1));
+    @include font-other(vi) {
+      font-family: $font-family-saira;
+    }
+    @include only-pc {
+      &:hover {
+        background-color: get-color('primary');
+      }
+    }
+
+    &:active {
+      @include pc {
+        transform: translateY(2px);
+      }
+    }
+  }
+}

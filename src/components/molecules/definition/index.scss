@@ -1,0 +1,104 @@
+.m-definition {
+  $root: &;
+
+  position: relative;
+  padding: 32px 0;
+  border-top: 2px solid get-color('border', 'primary');
+
+  @include pc {
+    display: flex;
+  }
+
+  &:before {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 140px;
+    height: 2px;
+    content: '';
+    background-color: get-color('primary');
+
+    @include pc {
+      width: 233px;
+    }
+  }
+
+  &--row {
+    @include pc {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__title {
+    font-family: $font-family-saira;
+    font-weight: $font-weight-bold;
+    @include u-fz(20, 32);
+
+    @include pc {
+      flex: 0 0 286px;
+      padding-right: 16px;
+    }
+
+    @include sp {
+      margin-bottom: 16px;
+    }
+
+    #{$root}--row & {
+      @include pc {
+        flex: 0 0 100%;
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  &__content {
+    flex: 1;
+    @include u-fz(18, 27);
+
+    .a-job-title {
+      width: 100%;
+      margin-bottom: 16px;
+
+      @include pc {
+        width: 202px;
+        margin-right: 16px;
+        margin-bottom: 16px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .a-job-title__vi {
+      width: 100%;
+      margin-bottom: 16px;
+
+      @include pc {
+        width: 202px;
+        margin-right: 16px;
+        margin-bottom: 16px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .m-procedure {
+      @include pc {
+        padding: 0 57px;
+
+        .a-image {
+          margin-top: -7px;
+        }
+      }
+      @include tablet {
+        padding: 0 convert-vw(30px);
+      }
+      @include tablet-small {
+        padding: 0;
+      }
+    }
+  }
+}
