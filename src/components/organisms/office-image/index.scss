@@ -1,9 +1,0 @@
-.o-office-image {
-  .a-image {
-    @include aspect-ratio(375, 275);
-
-    @include pc {
-      @include aspect-ratio(1440, 562);
-    }
-  }
-}
