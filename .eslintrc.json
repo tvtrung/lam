@@ -1,0 +1,45 @@
+{
+  "root": true,
+  "extends": [
+    "@fourdigit/eslint-config-fourdigit/esnext",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@next/next/recommended"
+  ],
+  "plugins": ["react-hooks"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "createDefaultProgram": true
+  },
+  "settings": {
+    "react": {
+      "sourceType": "module",
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "indent": "off",
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "react/prop-types": 0,
+    "no-magic-numbers": 0,
+    "array-callback-return": "warn",
+    "no-throw-literal": "warn",
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "linebreak-style": 0,
+    "prettier/prettier": 0,
+    "no-console": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@next/next/next-script-for-ga": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "@next/next/no-img-element": "off"
+  },
+  "overrides": [
+    {
+      "files": ["*.js"],
+      "rules": {
+        "@typescript-eslint/no-var-requires": 0
+      }
+    }
+  ]
+}
